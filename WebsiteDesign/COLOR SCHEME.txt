@@ -1,0 +1,5 @@
+COLOR SCHEME
+
+Background: #212A31
+Header: #748D92
+Body Text: #D3D9D4
