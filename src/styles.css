@@ -1,0 +1,314 @@
+:root {
+  --dark: #2C3531;
+  --light: #F9FAFB;
+  --font: 'Roboto Serif', serif;
+  --accent: #FFCB9A;
+  --primary: #116466;
+  --secondary: #D9B08C;
+  --neutral: #D1E8E2;
+  --text-dark: #222;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('./fonts/Roboto_Serif/static/RobotoSerif-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--neutral);
+  font-family: var(--font);
+  color: var(--text-dark);
+}
+
+body {
+  font-family: var(--font);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column; /* So the brand and nav stack */
+  align-items: center; /* Center horizontally */
+  justify-content: center;
+  background: var(--primary);
+  color: var(--light);
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, var(--dark), var(--primary)); /* Full background */
+  height: 85vh; /* Use min-height to keep content visible */
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Home container with elevated card feel */
+.home-container {
+  text-align: center;
+  padding: 3rem 2.5rem;
+  max-width: 50%;
+  background: transparent;  /* Ensure it doesn't have a separate background */
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: slideUp 1.2s ease-out;
+  box-sizing: border-box;
+}
+
+/* Text Styling */
+.intro-greeting {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--neutral); /* Neutral color for greeting text */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.intro-name {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent); /* Accent color for name */
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.intro-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--secondary); /* Secondary color for title */
+  margin-bottom: 2rem;
+}
+
+/* CTA Button */
+.cta-btn {
+  padding: 14px 32px;
+  background-color: var(--accent); /* Accent color for button */
+  color: var(--dark); /* Dark color for text in button */
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--secondary); /* Secondary color on hover */
+  color: var(--light); /* Light text color on hover */
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: var(--primary); /* Matching primary background */
+  color: var(--light); /* Light text color */
+  padding: 1rem 2rem; /* Adjust padding to match header */
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+  font-size: 1rem;
+}
+
+footer .nav {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0.75rem;
+}
+
+footer .nav-item {
+  margin-right: 1.5rem;
+}
+
+footer .nav-link {
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+footer .nav-link:hover {
+  color: var(--accent); /* Highlight on hover */
+}
+
+footer p {
+  margin-top: 0.75rem;
+  color: var(--neutral); /* Slightly muted color for the copyright text */
+}
+
+/* Clean brand title */
+.brand-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+/* Navbar link enhancements */
+.nav-menu {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.nav-link-large {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--light);
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link-large:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+    background: #000;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-name {
+    font-size: 2rem;
+  }
+
+  .intro-title {
+    font-size: 1.1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  footer .nav-link {
+    padding: 0.5rem;
+  }
+}
