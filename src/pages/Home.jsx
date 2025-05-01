@@ -1,15 +1,38 @@
-import { Link } from 'react-router-dom';
-import '../styles.css';
+import { useMemo } from "react";
+import "../styles.css";
 
 function Home() {
+  const titles = useMemo(
+    () => [
+      "SOFTWARE DEVELOPER",
+      "SOFTWARE ENGINEER",
+      "WEB DEVELOPER",
+      "SYSTEMS DESIGNER",
+      "DATABASE ARCHITECT",
+      "MAINFRAME DEVELOPER (IBM)",
+      "TECHNOLOGY CONSULTANT",
+      "IT ANALYST",
+      "COMPUTER BUILDER",
+      "TECH ENTHUSIAST",
+      "SHIFT SUPERVISOR, TIM HORTONS",
+    ],
+    [],
+  );
+
+  const tickerText = useMemo(() => titles.join("     •     "), [titles]);
+
   return (
-    <main>
-      <div className="home-container fade-in">
-        <h6 className="intro-greeting">Greetings Visitor, My Name Is</h6>
-        <h1 className="intro-name mb-4">RAMIYAN GANGATHARAN</h1>
-        <i><h4 className="intro-title">Software Developer</h4></i>
-      </div>
-    </main>
+    <div className="home-container">
+      <section id="home">
+        <div className="hero-content">
+          <p className="intro-greeting">Greetings Visitor, My Name Is</p>
+          <h1 className="intro-name">RAMIYAN G.</h1>
+          <div className="marquee-container" aria-label="Career Titles Ticker">
+            <div className="marquee-track"><span> {tickerText} • {tickerText} </span></div>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 

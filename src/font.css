@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Serif';
+    src: url('./fonts/Roboto_Serif/static/RobotoSerif-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }

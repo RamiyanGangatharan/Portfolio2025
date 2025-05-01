@@ -1,109 +1,30 @@
+/*============================
+  1. ROOT VARIABLES & FONTS
+=============================*/
 :root {
-  --dark: #2C3531;
+  --dark: #2C3531; 
   --light: #F9FAFB;
-  --font: 'Roboto Serif', serif;
+  --font: "Roboto Serif", serif;
   --accent: #FFCB9A;
   --primary: #116466;
   --secondary: #D9B08C;
   --neutral: #D1E8E2;
-  --text-dark: #222;
+  --text-dark: #222222;
 }
 
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-ThinItalic.ttf') format('truetype');
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Serif';
-  src: url('./fonts/Roboto_Serif/static/RobotoSerif-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-}
-
+/*============================
+  2. BASE STYLES
+=============================*/
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: var(--font);
   background-color: var(--neutral);
-  font-family: var(--font);
   color: var(--text-dark);
-}
-
-body {
-  font-family: var(--font);
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -112,53 +33,155 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
+/*============================
+  3. HEADER & FOOTER
+=============================*/
 header {
-  display: flex;
-  flex-direction: column; /* So the brand and nav stack */
-  align-items: center; /* Center horizontally */
-  justify-content: center;
   background: var(--primary);
   color: var(--light);
-  padding: 1rem 2rem;
-  text-align: center;
-  position: relative;
+  display: flex;
+  justify-content: flex-start; /* Align to left */
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   z-index: 10;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 
-main {
+.nav-menu {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  list-style: none;
   padding: 0;
   margin: 0;
-  background: linear-gradient(135deg, var(--dark), var(--primary)); /* Full background */
-  height: 85vh; /* Use min-height to keep content visible */
+  gap: 1rem;
+}
+
+.nav-link-large {
+  color: var(--light);
+  font-size: 0.95rem;
+  font-weight: 400; /* Less bold */
+  text-decoration: none;
+  transition: color 0.2s ease;
+  opacity: 0.85; /* Slight transparency */
+}
+
+.nav-link-large:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+
+/* FOOTER */
+footer {
+  background: var(--primary);
+  color: var(--light);
+  padding: 2rem 2rem;
+  text-align: center;
+  font-size: 1rem;
   width: 100%;
+}
+
+footer p {
+  margin: 0.5rem 0 0;
+  color: var(--neutral);
+}
+
+footer .nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  gap: 1rem;
+}
+
+footer .nav-link {
+  color: var(--light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+footer .nav-link:hover {
+  color: var(--accent);
+}
+
+/*============================
+  4. NAVIGATION
+=============================*/
+.brand-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link-large {
+  font-size: 1rem; /* reduced from 1.5rem */
+  font-weight: 400; /* lighter weight */
+  color: var(--light);
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.nav-link-large:hover {
+  color: var(--accent);
+  transform: translateY(-1px); /* smaller hover lift */
+}
+
+/*============================
+  5. MAIN & SECTION STYLES
+=============================*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  margin: 0;
+  width: 100%;
+  min-height: 85vh;
+  background: linear-gradient(135deg, var(--dark), var(--primary));
   overflow: hidden;
   box-sizing: border-box;
 }
 
-/* Home container with elevated card feel */
-.home-container {
+/* Home Container */
+.home-container, .experience-container {
   text-align: center;
   padding: 3rem 2.5rem;
   max-width: 50%;
-  background: transparent;  /* Ensure it doesn't have a separate background */
+  background: transparent;
   border-radius: 16px;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   animation: slideUp 1.2s ease-out;
   box-sizing: border-box;
 }
 
-/* Text Styling */
+.experience-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/*============================
+  6. TYPOGRAPHY & CTA
+=============================*/
 .intro-greeting {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--neutral); /* Neutral color for greeting text */
+  color: var(--neutral);
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -167,7 +190,7 @@ main {
 .intro-name {
   font-size: 4rem;
   font-weight: 700;
-  color: var(--accent); /* Accent color for name */
+  color: var(--accent);
   margin-bottom: 0.75rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -175,15 +198,14 @@ main {
 .intro-title {
   font-size: 2rem;
   font-weight: 400;
-  color: var(--secondary); /* Secondary color for title */
+  color: var(--secondary);
   margin-bottom: 2rem;
 }
 
-/* CTA Button */
 .cta-btn {
   padding: 14px 32px;
-  background-color: var(--accent); /* Accent color for button */
-  color: var(--dark); /* Dark color for text in button */
+  background-color: var(--accent);
+  color: var(--dark);
   border: none;
   border-radius: 10px;
   font-size: 1rem;
@@ -193,84 +215,79 @@ main {
 }
 
 .cta-btn:hover {
-  background-color: var(--secondary); /* Secondary color on hover */
-  color: var(--light); /* Light text color on hover */
+  background-color: var(--secondary);
+  color: var(--light);
   transform: translateY(-2px);
 }
 
-/* Footer */
-footer {
-  background: var(--primary); /* Matching primary background */
-  color: var(--light); /* Light text color */
-  padding: 1rem 2rem; /* Adjust padding to match header */
-  text-align: center;
-  margin-top: auto;
+/*============================
+  7. MARQUEE & TICKER
+=============================*/
+.marquee-container {
   width: 100%;
-  font-size: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 2rem;
 }
 
-footer .nav {
-  padding-left: 0;
-  list-style: none;
-  margin-bottom: 0.75rem;
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marqueeScroll 60s linear infinite;
+  will-change: transform;
 }
 
-footer .nav-item {
-  margin-right: 1.5rem;
-}
-
-footer .nav-link {
-  color: var(--light);
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-footer .nav-link:hover {
-  color: var(--accent); /* Highlight on hover */
-}
-
-footer p {
-  margin-top: 0.75rem;
-  color: var(--neutral); /* Slightly muted color for the copyright text */
-}
-
-/* Clean brand title */
-.brand-title {
-  font-size: 3rem;
-  font-weight: 600;
-  color: var(--light);
-}
-
-/* Navbar link enhancements */
-.nav-menu {
-  display: flex;
-  justify-content: center; /* Centers the links horizontally */
-  align-items: center;
-  gap: 2rem;
-  list-style: none;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin: 0;
-}
-
-.nav-link-large {
+.marquee-track span {
+  display: inline-block;
+  padding-right: 4rem;
   font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--light);
-  padding: 0.5rem 0.75rem;
-  text-decoration: none;
+  color: var(--secondary);
+  font-family: var(--font);
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Hero Section */
+.hero-section {
+  background: var(--primary);
+  border-radius: 10px;
+  color: var(--neutral);
+  min-height: 90vh;
+  display: flex;
   align-items: center;
-  transition: color 0.3s ease, transform 0.2s ease;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
-.nav-link-large:hover {
-  color: var(--accent);
-  transform: translateY(-2px);
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  height: 2rem;
+  position: relative;
 }
 
-/* Animations */
+.ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  animation: ticker 3s ease-in-out;
+}
+
+/*============================
+  8. ANIMATIONS
+=============================*/
+@keyframes marqueeScroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
 @keyframes fadeInBackground {
   from {
     opacity: 0;
@@ -280,7 +297,6 @@ footer p {
     opacity: 1;
   }
 }
-
 @keyframes slideUp {
   from {
     transform: translateY(60px);
@@ -291,17 +307,34 @@ footer p {
     opacity: 1;
   }
 }
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
 
-/* Responsive */
+/*============================
+  9. RESPONSIVE DESIGN
+=============================*/
 @media (max-width: 768px) {
   .intro-name {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
-
   .intro-title {
     font-size: 1.1rem;
   }
-
   .cta-btn {
     font-size: 0.9rem;
     padding: 10px 20px;
@@ -310,4 +343,15 @@ footer p {
   footer .nav-link {
     padding: 0.5rem;
   }
+
+  .experience-container {
+    padding: 1rem;
+  }
+  .experience-container h2 {
+    font-size: 1.15rem;
+  }
+}
+
+.experience-container:not(:last-child) {
+  margin-bottom: 2rem;
 }

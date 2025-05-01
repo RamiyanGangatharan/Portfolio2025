@@ -1,14 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function PageNotFound() {
   return (
-    <main className="d-flex flex-column justify-content-center align-items-center text-center min-vh-100">
-      <h1 className="display-1 intro-name mb-4">404</h1>
-      <p className="lead intro-name mb-4">Oops! The page you're looking for doesn't exist.</p>
-      <Link to="/" className="cta-btn" title="Back to Home">
-        Go to Homepage
-      </Link>
-    </main>
+    <div className="home-container" aria-label="Page not found">
+      <h1 className="display-1 intro-name mb-3">404</h1>
+      <p className="lead mb-4 intro-name">Oops! The page you're looking for doesn't exist.</p>
+      <Link to="/" className="cta-btn" title="Back to Homepage">Go to Homepage</Link>
+    </div>
   );
 }
 

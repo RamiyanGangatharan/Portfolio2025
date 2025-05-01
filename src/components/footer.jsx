@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom';
-import '../styles.css';
+import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="footer">
-      <p className="text-center text-light">© {currentYear} Ramiyan Gangatharan</p>
+      <p>© {currentYear} Ramiyan Gangatharan. All rights reserved.</p>
     </footer>
   );
 }
