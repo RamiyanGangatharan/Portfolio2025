@@ -1,7 +1,20 @@
 import { useState, useEffect, useMemo, useRef } from "react";
-import '../css/home.css';
+import "../css/home.css";
 
+/**
+ * `Home` is the landing component of the portfolio site.
+ * It displays a dynamic typing effect that cycles through various titles,
+ * showcasing Ramiyan's skills and roles.
+ *
+ * @component
+ * @returns {JSX.Element} The homepage section with animated title text.
+ */
 function Home() {
+  /**
+   * List of professional titles to cycle through.
+   * Memoized to avoid unnecessary re-renders.
+   * @type {string[]}
+   */
   const titles = useMemo(
     () => [
       "SOFTWARE DEVELOPER",
@@ -19,29 +32,44 @@ function Home() {
     []
   );
 
+  /** @type {[string, Function]} */
   const [currentTitle, setCurrentTitle] = useState("");
-  const [index, setIndex] = useState(0);
-  const typingSpeed = 150; // Speed of typing effect
-  const pauseTime = 100; // Time the title stays before switching
-  const eraseSpeed = 20; // Speed for erasing
 
-  const titleRef = useRef(""); // Using useRef to hold the current title during typing
-  const titleContainerRef = useRef(null); // To prevent flickering on the container
+  /** @type {[number, Function]} */
+  const [index, setIndex] = useState(0);
+
+  /** Typing effect speeds (ms) */
+  const typingSpeed = 150;
+  const pauseTime = 100;
+  const eraseSpeed = 20;
+
+  /**
+   * Holds the current string being typed or erased without triggering re-renders.
+   * @type {React.MutableRefObject<string>}
+   */
+  const titleRef = useRef("");
+
+  /**
+   * Optional: ref to the container, can be used to handle visual transitions.
+   * @type {React.MutableRefObject<HTMLDivElement | null>}
+   */
+  const titleContainerRef = useRef(null);
 
   useEffect(() => {
     let typingTimeout;
     let eraseTimeout;
 
-    // Function to type each title
+    /**
+     * Begins typing the current title character by character.
+     */
     const typeTitle = () => {
       const title = titles[index];
       let charIndex = 0;
 
-      // Function to start typing the current title
       const typeChar = () => {
         if (charIndex < title.length) {
-          titleRef.current += title.charAt(charIndex); // Update titleRef directly
-          setCurrentTitle(titleRef.current); // Sync with state for render
+          titleRef.current += title.charAt(charIndex);
+          setCurrentTitle(titleRef.current);
           charIndex++;
           typingTimeout = setTimeout(typeChar, typingSpeed);
         } else {
@@ -49,18 +77,20 @@ function Home() {
         }
       };
 
-      // Function to erase the current title
+      /**
+       * Erases the current title character by character before switching to the next.
+       */
       const eraseTitle = () => {
         let eraseIndex = title.length - 1;
 
         const eraseChar = () => {
           if (eraseIndex >= 0) {
-            titleRef.current = titleRef.current.slice(0, eraseIndex); // Erase from titleRef
-            setCurrentTitle(titleRef.current); // Sync with state for render
+            titleRef.current = titleRef.current.slice(0, eraseIndex);
+            setCurrentTitle(titleRef.current);
             eraseIndex--;
             eraseTimeout = setTimeout(eraseChar, eraseSpeed);
           } else {
-            // Move to the next title
+            // Switch to next title
             setIndex((prevIndex) => (prevIndex + 1) % titles.length);
           }
         };
@@ -68,14 +98,13 @@ function Home() {
         eraseChar();
       };
 
-      titleRef.current = ""; // Clear the title before starting to type
-      typeChar(); // Start typing the current title
+      titleRef.current = "";
+      typeChar();
     };
 
-    // Start the typing effect
     typeTitle();
 
-    // Clear all timeouts on cleanup
+    // Cleanup timers on unmount or index update
     return () => {
       clearTimeout(typingTimeout);
       clearTimeout(eraseTimeout);
@@ -85,16 +114,16 @@ function Home() {
   return (
     <div>
       <div className="home-container">
-      <section id="home">
-        <div className="hero-content">
-          <p className="intro-greeting">Greetings Visitor, My Name Is</p>
-          <h1 className="intro-name">RAMIYAN G.</h1>
-          <div ref={titleContainerRef} className="career-ticker">
-            <p className="typing-effect">{currentTitle}</p>
+        <section id="home">
+          <div className="hero-content">
+            <p className="intro-greeting">Greetings Visitor, My Name Is</p>
+            <h1 className="intro-name">RAMIYAN G.</h1>
+            <div ref={titleContainerRef} className="career-ticker">
+              <p className="typing-effect">{currentTitle}</p>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </div>
   );
 }

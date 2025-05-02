@@ -30,7 +30,7 @@ header {
   
   .nav-link-large {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--light);
     text-decoration: none;
     transition: color 0.2s ease, transform 0.15s ease;
