@@ -1,0 +1,61 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  min-height: 86vh;
+  background: linear-gradient(135deg, var(--dark), var(--primary));
+  box-sizing: border-box;
+
+}
+
+.hero-content {
+  text-align: center;
+  padding: 3rem 2.5rem;
+  max-width: 100%;
+  background: transparent;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: slideUp 1.2s ease-out;
+  box-sizing: border-box;
+}
+
+.intro-greeting {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.intro-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.career-ticker {
+  margin-top: 2rem;
+  display: inline-block; /* Prevent flickering or shifting */
+  overflow: hidden;
+}
+
+.typing-effect {
+  font-size: 1.5rem;
+  color: #D9B08C;
+  font-weight: 500;
+  white-space: nowrap;
+  border-right: 3px solid #D9B08C; /* Blinking cursor effect */
+  padding-right: 5px;
+  display: inline-block;
+  animation: blinkCaret 0.75s step-end infinite;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Blinking caret animation */
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}

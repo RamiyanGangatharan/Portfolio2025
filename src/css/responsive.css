@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    .intro-name {
+      font-size: 1.75rem;
+    }
+  
+    .intro-title {
+      font-size: 1.1rem;
+    }
+  
+    .cta-btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  
+    footer .nav-link {
+      padding: 0.5rem;
+    }
+  
+    .experience-container {
+      padding: 1rem;
+    }
+  
+    .experience-container h2 {
+      font-size: 1.15rem;
+    }
+  }
+  
+  .experience-container:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  

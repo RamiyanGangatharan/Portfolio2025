@@ -3,8 +3,7 @@ import Home from './pages/Home';
 import PageNotFound from './pages/404';
 import Navbar from './components/Navbar'; 
 import Footer from './components/footer';
-import './styles.css';
-import './font.css';
+import './css/main.css';
 
 function App() {
   return (
