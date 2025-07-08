@@ -1,0 +1,41 @@
+# Ignore node_modules in client and server
+/client/node_modules/
+/server/node_modules/
+
+/.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Coverage folders in both
+/client/coverage/
+/server/coverage/
+
+# Next.js build output in client
+/client/.next/
+/client/out/
+
+# Production build outputs
+/client/build/
+/server/build/
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Env files (optional)
+.env*
+
+# Vercel config
+.vercel
+
+# TypeScript build info and Next.js env
+*.tsbuildinfo
+/client/next-env.d.ts
