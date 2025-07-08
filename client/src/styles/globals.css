@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+caption.table-title h1,
+.table-title h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Column Headers */
+thead {
+  background-color: #333333;
+  color: white;
+}
+
+td, th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+  width: fit-content;
+}
+
+/* Row Border Styling */
+tbody tr { border-top: 1px solid white; }
