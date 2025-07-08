@@ -1,36 +1,108 @@
-body {
-  background-color: black;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* COLOR SCHEME */
+:root {
+  --bg-color: #2E4439;          /* Dark forest green background */
+  --text-color: #E6E4D9;        /* Soft off-white text */
+  --accent-color: #6B8E23;      /* Olive drab for highlights */
+  --header-bg: #4A6B33;         /* Dark moss green for headers */
+  --border-color: #374F33;    
 }
+
+/* TEXT STYLE */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 { font-weight: 900; }
+h2 { font-weight: 800; }
+h3 { font-weight: 700; }
+h4 { font-weight: 600; }
+h5 { font-weight: 500; }
+h6 { font-weight: 400; }
+
+p, li, span, blockquote, address {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+strong, b {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+em, i {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 400;
+}
+
+small {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+/* GENERAL STYLES */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+/* TABLE STYLES */
 
 table {
   margin: auto;
   border-collapse: collapse;
   width: fit-content;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--header-bg);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-caption.table-title h1,
-.table-title h1 {
+caption.table-title h1 {
+  color: var(--accent-color);
   text-align: center;
   margin: 1rem 0;
+  font-weight: 600;
   font-size: 2rem;
-  color: white;
 }
 
-/* Column Headers */
 thead {
-  background-color: #333333;
-  color: white;
+  background-color: var(--border-color);
+  color: var(--text-color);
+  font-weight: 600;
 }
 
 td, th {
-  border: 1px solid white;
-  text-align: left;
-  padding: 8px;
-  width: fit-content;
+  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  color: var(--text-color);
 }
 
-/* Row Border Styling */
-tbody tr { border-top: 1px solid white; }
+tbody tr:nth-child(even) {
+  background-color: var(--bg-color);
+}
+
+
+.card {
+  background-color: var(--border-color);
+  height: 10vw;
+  width: 60%;
+  margin: auto;
+}
