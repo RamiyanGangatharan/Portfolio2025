@@ -1,0 +1,46 @@
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  animation: fadeIn 0.5s ease-in;
+}
+
+.splash-content {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.splash-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Spinner */
+.spinner {
+  border: 6px solid var(--border-color);
+  border-top: 6px solid var(--accent-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+/* Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
