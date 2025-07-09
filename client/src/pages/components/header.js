@@ -14,7 +14,6 @@ export default function Header() {
             >
               <h1>RG</h1>
             </a>
-
             <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
               <li>
                 <a href="/" className="nav-link text-center text-white">
@@ -24,26 +23,6 @@ export default function Header() {
                     size="lg"
                   />
                   Home
-                </a>
-              </li>
-              <li>
-                <a href="/devlog" className="nav-link text-white text-center">
-                  <FontAwesomeIcon
-                    icon={SolidIcons.faCodeBranch}
-                    className="d-block mx-auto mb-1"
-                    size="lg"
-                  />
-                  Developer Log
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="nav-link text-white text-center">
-                  <FontAwesomeIcon
-                    icon={SolidIcons.faUser}
-                    className="d-block mx-auto mb-1"
-                    size="lg"
-                  />
-                  About
                 </a>
               </li>
               <li>
@@ -74,6 +53,16 @@ export default function Header() {
                     size="lg"
                   />
                   Contact
+                </a>
+              </li>
+              <li>
+                <a href="/devlog" className="nav-link text-white text-center">
+                  <FontAwesomeIcon
+                    icon={SolidIcons.faCodeBranch}
+                    className="d-block mx-auto mb-1"
+                    size="lg"
+                  />
+                  Dev Log
                 </a>
               </li>
             </ul>
