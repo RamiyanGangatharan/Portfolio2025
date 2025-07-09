@@ -91,4 +91,7 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 - Built the foundational structure of the website  
 - Adopted a MERN stack architecture, including:  
-  - MongoDB (planne
+  - MongoDB (planned)  
+  - Express.js  
+  - Next.js  
+  - Node.js  
