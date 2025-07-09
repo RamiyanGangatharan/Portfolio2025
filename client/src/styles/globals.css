@@ -51,9 +51,7 @@ tbody tr:nth-child(even) { background-color: var(--bg-color); }
   height: fit-content; /* Better than fixed vw height */
 }
 
-.portrait {
-  flex: 1;
-}
+.portrait { flex: 1; }
 
 .portrait img {
   width: 100%;
@@ -89,14 +87,10 @@ tbody tr:nth-child(even) { background-color: var(--bg-color); }
     text-align: center;
   }
 
-  .portrait, .about_paragraph {
-    width: 100%;
-  }
+  .portrait, .about_paragraph { width: 100%; }
 }
 
-.nav-link {
-  transition: color 0.3s ease;
-}
+.nav-link { transition: color 0.3s ease; }
 
 .nav-link:hover {
   background-color: var(--bg-color); /* Example: teal color on hover */
