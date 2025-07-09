@@ -17,7 +17,7 @@ export default function Header() {
 
             <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
               <li>
-                <a href="/" className="nav-link text-secondary text-center">
+                <a href="/" className="nav-link text-center text-white">
                   <FontAwesomeIcon
                     icon={SolidIcons.faHouse}
                     className="d-block mx-auto mb-1"

@@ -62,4 +62,32 @@ This portfolio is designed to provide a clean, modern, and user-friendly interfa
 3. Run Locally
    - in the client folder, do `npm run dev`
    - in the server folder, do `node server.js`
+
    
+# Development Log
+
+---
+
+### July 9th, 2025
+
+#### General
+- Created and styled a header and footer for the website.
+- Organized a file structure for an ideal long-term plan.
+- Split the CSS files by usage and joined them in a global file.
+- Removed the TO-DO list and replaced it with a development log.
+
+#### Styling
+- Installed Bootstrap 5.3.
+- Installed Font Awesome for free icons.
+- Made a colour scheme and chose the Roboto font.
+
+---
+
+### July 8th, 2025
+
+- Built the foundational structure of the website.
+- Conforming to the MERN Stack, I have used the following technologies:
+  - MongoDB (planned)
+  - ExpressJS
+  - NextJS (Modern React)
+  - NodeJS

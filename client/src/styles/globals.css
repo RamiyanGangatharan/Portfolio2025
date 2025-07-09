@@ -1,70 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
-/* COLOR SCHEME */
-:root {
-  --bg-color: #2E4439;          /* Dark forest green background */
-  --text-color: #E6E4D9;        /* Soft off-white text */
-  --accent-color: #6B8E23;      /* Olive drab for highlights */
-  --header-bg: #4A6B33;         /* Dark moss green for headers */
-  --border-color: #374F33;    
-}
-
-/* TEXT STYLE */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-h1 { font-weight: 900; }
-h2 { font-weight: 800; }
-h3 { font-weight: 700; }
-h4 { font-weight: 600; }
-h5 { font-weight: 500; }
-h6 { font-weight: 400; }
-
-p, li, span, blockquote, address {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 400;
-}
-
-strong, b {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 600;
-}
-
-em, i {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-style: italic;
-  font-weight: 400;
-}
-
-small {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 300;
-}
+@import url('../styles/colourScheme.css');
+@import url('../styles/font.css');
 
 
 /* GENERAL STYLES */
-
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family:Arial, Helvetica, sans-serif;
 }
 
-
-
 /* TABLE STYLES */
-
 table {
   margin: auto;
   border-collapse: collapse;
@@ -95,14 +41,65 @@ td, th {
   color: var(--text-color);
 }
 
-tbody tr:nth-child(even) {
-  background-color: var(--bg-color);
-}
-
+tbody tr:nth-child(even) { background-color: var(--bg-color); }
 
 .card {
   background-color: var(--border-color);
-  height: 10vw;
-  width: 60%;
+  width: 80%;
   margin: auto;
+  border-radius: 1rem;
+  height: fit-content; /* Better than fixed vw height */
+}
+
+.portrait {
+  flex: 1;
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.about {
+  height: fit-content;
+  border-radius: 25px;
+}
+
+.about_paragraph {
+  text-align: justify;
+  text-decoration: none;
+}
+
+.devlog {
+  text-align: justify;
+  width: 44%;
+}
+
+.timestamp {
+  text-align: left;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portrait, .about_paragraph {
+    width: 100%;
+  }
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--bg-color); /* Example: teal color on hover */
+  color: var(--accent-color);
+  text-decoration: underline;
 }

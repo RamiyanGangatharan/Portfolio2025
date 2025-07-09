@@ -1,0 +1,8 @@
+/* COLOR SCHEME */
+:root {
+  --bg-color: #2E4439;          /* Dark forest green background */
+  --text-color: #E6E4D9;        /* Soft off-white text */
+  --accent-color: #6B8E23;      /* Olive drab for highlights */
+  --header-bg: #4A6B33;         /* Dark moss green for headers */
+  --border-color: #374F33;    
+}

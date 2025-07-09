@@ -1,0 +1,42 @@
+/* TEXT STYLE */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 { font-weight: 900; }
+h2 { font-weight: 800; }
+h3 { font-weight: 700; }
+h4 { font-weight: 600; }
+h5 { font-weight: 500; }
+h6 { font-weight: 400; }
+
+p, li, span, blockquote, address {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+strong, b {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+em, i {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 400;
+}
+
+small {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+

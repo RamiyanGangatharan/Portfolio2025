@@ -9,33 +9,13 @@ export default function Footer() {
 
       <ul className="nav col-md-4 justify-content-end">
         <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            <FontAwesomeIcon icon={SolidIcons.faHouse} className="me-2" />
+          <a href="/" className="nav-link text-white">
             Home
           </a>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            <FontAwesomeIcon icon={SolidIcons.faStar} className="me-2" />
-            Features
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            <FontAwesomeIcon icon={SolidIcons.faDollarSign} className="me-2" />
-            Pricing
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            <FontAwesomeIcon icon={SolidIcons.faCircleQuestion} className="me-2" />
-            FAQs
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            <FontAwesomeIcon icon={SolidIcons.faInfoCircle} className="me-2" />
-            About
+          <a href="/" className="nav-link text-white">
+            Developer Log
           </a>
         </li>
       </ul>
