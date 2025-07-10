@@ -13,27 +13,42 @@ export default function Header()
                     <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                         <li>
                             <a href="/" className="nav-link text-center text-white">
-                                <FontAwesomeIcon icon={SolidIcons.faHouse} className="d-block mx-auto mb-1" size="lg" /> Home
+                                <
+                                    FontAwesomeIcon icon={SolidIcons.faHouse} 
+                                    className="d-block mx-auto mb-1" size="lg" 
+                                /> Home
                             </a>
                         </li>
                         <li>
                             <a href="/projects" className="nav-link text-white text-center">
-                                <FontAwesomeIcon icon={SolidIcons.faFolderOpen} className="d-block mx-auto mb-1" size="lg" /> Projects
+                                <
+                                    FontAwesomeIcon 
+                                    icon={SolidIcons.faFolderOpen} 
+                                    className="d-block mx-auto mb-1" size="lg" 
+                                /> Projects
                             </a>
                         </li>
                         <li>
                             <a href="/resume" className="nav-link text-white text-center">
-                                <FontAwesomeIcon icon={SolidIcons.faFileAlt} className="d-block mx-auto mb-1" size="lg" /> Resume
+                                <
+                                    FontAwesomeIcon icon={SolidIcons.faFileAlt} 
+                                    className="d-block mx-auto mb-1" size="lg" 
+                                /> Resume
                             </a>
                         </li>
                         <li>
                             <a href="/contact" className="nav-link text-white text-center">
-                                <FontAwesomeIcon icon={SolidIcons.faEnvelope} className="d-block mx-auto mb-1" size="lg" /> Contact
+                                <
+                                    FontAwesomeIcon icon={SolidIcons.faEnvelope} 
+                                    className="d-block mx-auto mb-1" size="lg" 
+                                /> Contact
                             </a>
                         </li>
                         <li>
                             <a href="/devlog" className="nav-link text-white text-center">
-                                <FontAwesomeIcon icon={SolidIcons.faCodeBranch} className="d-block mx-auto mb-1" size="lg" /> Dev Log
+                                <FontAwesomeIcon icon={SolidIcons.faCodeBranch} 
+                                className="d-block mx-auto mb-1" size="lg" 
+                            /> Dev Log
                             </a>
                         </li>
                     </ul>
