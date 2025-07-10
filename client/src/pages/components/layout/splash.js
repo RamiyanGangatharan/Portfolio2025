@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import "@/styles/splash.css"; 
 import "@/styles/globals.css";
 
+// This is a loading screen animation
 export default function SplashScreen({ onComplete }) {
-  useEffect(() => {
-    const timer = setTimeout(() => {onComplete();}, 1000);
-    return () => clearTimeout(timer);
-  }, [onComplete]);
+  useEffect(() => { 
+    const timer = setTimeout(() => {onComplete();}, 1000); 
+    return () => clearTimeout(timer); }, [onComplete]);
 
   return (
     <div
