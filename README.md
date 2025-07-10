@@ -70,6 +70,17 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 # Development Log
 
+## July 10, 2025
+
+### General
+- Refactored the codebase and reorganized the file structure for better semantic clarity.
+- Developed a complete contact page integrated with Nodemailer and a server using SMTP.
+- Created async ops to redirect users to the homepage at form submission, preventing spam.
+
+### Server
+- Added Nodemailer to enable SMTP email capabilities within the server.
+- Integrated Morgan middleware for request logging and improved server monitoring.
+
 ## July 9, 2025
 
 ### General

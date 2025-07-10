@@ -16,14 +16,14 @@ export default function DevLog()
               </div>
               <div className="bg-dark text-light rounded p-3">
                 <ul>
-                    <h5>General Improvements</h5>
+                    <h5>General</h5>
                     <ul>
                         <li>Refactored the codebase and reorganized the file structure for better semantic clarity.</li>
                         <li>Developed a complete contact page integrated with Nodemailer and a server using SMTP.</li>
                         <li>Created async ops to redirect users to the homepage at form submission, preventing spam.</li>
                     </ul>
                     <br/>
-                    <h5>Server Enhancements</h5>
+                    <h5>Server</h5>
                     <ul>
                         <li>Added Nodemailer to enable SMTP email capabilities within the server.</li>
                         <li>Integrated Morgan middleware for request logging and improved server monitoring.</li>
