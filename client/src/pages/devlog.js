@@ -10,6 +10,27 @@ export default function DevLog()
       <main>
           <div className="devlog card bg-dark text-white shadow-lg border-0 p-4 mb-2 mt-2">
               <h1 className="display-4 text-center mt-1 mb-4">Development Log</h1>
+
+                <div className="mb-3 mt-2">
+                  <span className="badge bg-light text-dark px-3 py-2 fs-6 fw-semibold">July 10th, 2025</span>
+              </div>
+              <div className="bg-dark text-light rounded p-3">
+                <ul>
+                    <h5>General Improvements</h5>
+                    <ul>
+                        <li>Refactored the codebase and reorganized the file structure for better semantic clarity.</li>
+                        <li>Developed a complete contact page integrated with Nodemailer and a server using SMTP.</li>
+                        <li>Created async ops to redirect users to the homepage at form submission, preventing spam.</li>
+                    </ul>
+                    <br/>
+                    <h5>Server Enhancements</h5>
+                    <ul>
+                        <li>Added Nodemailer to enable SMTP email capabilities within the server.</li>
+                        <li>Integrated Morgan middleware for request logging and improved server monitoring.</li>
+                    </ul>
+                </ul>
+              </div>
+
               <div className="mb-3 mt-2">
                   <span className="badge bg-light text-dark px-3 py-2 fs-6 fw-semibold">July 9th, 2025</span>
               </div>
