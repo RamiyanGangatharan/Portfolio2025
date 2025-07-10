@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "@/styles/globals.css";
 import Head from "next/head";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./components/layout/header";
+import Footer from "./components/layout/footer";
 
 export default function DevLog() {
     const [isClient, setIsClient] = useState(false);

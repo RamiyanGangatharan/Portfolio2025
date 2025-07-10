@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "@/styles/splashScreen.css"; 
+import "@/styles/splash.css"; 
 import "@/styles/globals.css";
 
 export default function SplashScreen({ onComplete }) {

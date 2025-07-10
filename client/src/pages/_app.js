@@ -2,7 +2,7 @@ import "@/lib/fontawesome";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import SplashScreen from "./components/splashScreen"; 
+import SplashScreen from "./components/layout/splash"; 
 
 export default function App({ Component, pageProps }) {
 
