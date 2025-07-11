@@ -21,17 +21,6 @@ function DevLogEntry({ date, sections, image }) {
   );
 }
 
-## July 11, 2025
-
-### General
-- 
-- 
-- 
-
-### Server
-- 
-
-
 export default function DevLog() {
   const logs = [
     {
