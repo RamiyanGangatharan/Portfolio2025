@@ -3,6 +3,8 @@ export default function About()
 { 
   return (
     <main className="container">
+        {/* MongoDB Test */}
+
         <div className="card bg-dark text-white shadow-lg border-0 p-4 mb-5">
             <div className="row g-4 align-items-center">
                 <div className="col-lg-4 text-center"> {/* Profile Picture */}

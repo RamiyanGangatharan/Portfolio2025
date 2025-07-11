@@ -70,6 +70,17 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 # Development Log
 
+## July 11, 2025
+
+### General
+- Redeveloping the projects page.
+- prevented email spam by disabling the submit button in the contact page.
+- Implemented MongoDB functionality with a test database. 
+
+### Server
+- Created a Windows 96 style GUI for my server port 5000
+
+
 ## July 10, 2025
 
 ### General

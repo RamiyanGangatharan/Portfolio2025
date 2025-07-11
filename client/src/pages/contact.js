@@ -7,6 +7,7 @@ import Footer from "./components/layout/footer";
 
 export default function Contact() {
   const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -21,6 +22,7 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true); // Disable button on submit
 
     try {
       const res = await fetch("http://localhost:5000/contact", {
@@ -54,6 +56,8 @@ export default function Contact() {
     } catch (err) {
       console.error("Fetch error:", err.message || err);
       alert("Something went wrong.");
+    } finally {
+      setIsSubmitting(false); // Re-enable button
     }
   };
 
@@ -155,8 +159,9 @@ export default function Contact() {
                 <button
                   type="submit"
                   className="btn btn-outline-light w-100"
+                  disabled={isSubmitting}
                 >
-                  Submit
+                  {isSubmitting ? "Sending, please wait, SMTP takes a bit..." : "Submit"}
                 </button>
               </div>
             </div>

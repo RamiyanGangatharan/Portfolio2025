@@ -51,6 +51,13 @@ export default function Header()
                             /> Dev Log
                             </a>
                         </li>
+                        <li>
+                            <a href="http://localhost:5000" className="nav-link text-white text-center">
+                                <FontAwesomeIcon icon={SolidIcons.faServer} 
+                                className="d-block mx-auto mb-1"  size="lg" 
+                                /> SERVER
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
