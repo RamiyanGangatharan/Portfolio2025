@@ -97,3 +97,13 @@ tbody tr:nth-child(even) { background-color: var(--bg-color); }
   color: var(--accent-color);
   text-decoration: underline;
 }
+
+.custom-card {
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}

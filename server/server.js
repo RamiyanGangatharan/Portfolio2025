@@ -6,7 +6,9 @@ const morgan = require('morgan');
 const contactRoutes = require('./routes/contact');
 const rootRoutes = require('./routes/root');
 const { connectToDB } = require('./config/db');
-const database_data_routes = require('./routes/database_data');
+const devlogsRoutes = require('./routes/devlog_data');
+const projectRoutes = require('./routes/project_data');
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -27,7 +29,8 @@ connectToDB()
     // Routes
     app.use('/', rootRoutes);
     app.use('/contact', contactRoutes);
-    app.use('/data', database_data_routes);
+    app.use('/data', devlogsRoutes);
+    app.use('/data', projectRoutes);
     
     // Start server
     app.listen(PORT, () => { console.log(`Server running on http://localhost:${PORT}`);});
