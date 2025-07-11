@@ -21,8 +21,40 @@ function DevLogEntry({ date, sections, image }) {
   );
 }
 
+## July 11, 2025
+
+### General
+- 
+- 
+- 
+
+### Server
+- 
+
+
 export default function DevLog() {
   const logs = [
+    {
+      date: "July 11th, 2025",
+      image: "/img/devlogs/serverlog.png",
+      sections: [
+        {
+          title: "General",
+          items: [
+            "Redeveloping the projects page.",
+            "prevented email spam by disabling the submit button in the contact page.",
+            "Implemented MongoDB functionality with a test database.",
+          ],
+        },
+        {
+          title: "Server",
+          items: [
+            "Made the outbound email of the contact page aesthetically pleasing",
+            "Created a Windows 96 style GUI for my server port 5000",
+          ],
+        },
+      ],
+    },
     {
       date: "July 10th, 2025",
       image: "/img/devlogs/serverlog.png",

@@ -79,6 +79,7 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 ### Server
 - Created a Windows 96 style GUI for my server port 5000
+- Made the outbound email of the contact page aesthetically pleasing
 
 
 ## July 10, 2025
