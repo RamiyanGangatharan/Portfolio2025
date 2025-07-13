@@ -70,13 +70,13 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 # Development Log
 
-## July 13, 2025
+## July 12, 2025
 
 ### General
 - added projects to my website.
 - added markdown files to go with my project to further describe it.
 
-## July 11, 2025
+## July 10, 2025
 
 ### General
 - Redeveloping the projects page.
@@ -88,7 +88,7 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 - Made the outbound email of the contact page aesthetically pleasing
 - Implemented database collections for dev logs and projects.
 
-## July 10, 2025
+## July 9, 2025
 
 ### General
 - Refactored the codebase and reorganized the file structure for better semantic clarity.
@@ -99,7 +99,7 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 - Added Nodemailer to enable SMTP email capabilities within the server.
 - Integrated Morgan middleware for request logging and improved server monitoring.
 
-## July 9, 2025
+## July 8, 2025
 
 ### General
 
@@ -116,7 +116,7 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 ---
 
-## July 8, 2025
+## July 7, 2025
 
 - Built the foundational structure of the website  
 - Adopted a MERN stack architecture, including:  
