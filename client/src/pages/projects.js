@@ -10,15 +10,12 @@ function ProjectEntry({ title, description, badges = [], link }) {
       <div className="card h-100 shadow-sm custom-card bg-light">
         <div className="card-body d-flex flex-column">
           <h5 className="card-title fw-bold text-dark">{title}</h5>
-          <p className="card-text text-muted small flex-grow-1">
+          <p className="card-text text-dark small flex-grow-1 text-justify">
             {description || "No description provided."}
           </p>
           <div className="mb-3">
             {(badges || []).map((badge, i) => (
-              <span
-                key={i}
-                className={`badge me-1 ${badge === "2025" ? "bg-secondary" : "bg-dark"}`}
-              >
+              <span key={i} className={`badge me-1 ${/^\d{4}$/.test(badge) && Number(badge) >= 2019 ? "bg-secondary" : "bg-dark" }`}>
                 {badge}
               </span>
             ))}
@@ -68,7 +65,7 @@ export default function Projects() {
       </Head>
       <Header />
       <main className="container my-5">
-        <h2 className="display-6 mb-4 text-center">Featured Projects</h2>
+        <h2 className="display-4 mb-4 text-center">Featured Projects</h2><hr className="mb-5"/>
         {loading && <p>Loading projects...</p>}
         {error && <p className="text-danger">{error}</p>}
         {!loading && !error && projects.length === 0 && (

@@ -9,7 +9,6 @@ const { connectToDB } = require('./config/db');
 const devlogsRoutes = require('./routes/devlog_data');
 const projectRoutes = require('./routes/project_data');
 
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
