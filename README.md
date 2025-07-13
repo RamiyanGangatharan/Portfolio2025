@@ -72,6 +72,9 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 ## July 13, 2025
 
+### General
+- added projects to my website.
+- added markdown files to go with my project to further describe it.
 
 ## July 11, 2025
 
