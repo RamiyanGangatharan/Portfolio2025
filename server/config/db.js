@@ -7,7 +7,10 @@ const client = new MongoClient(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   ssl: true,
+  tls: true,
   tlsAllowInvalidCertificates: false,
+  tlsInsecure: false,
+  serverApi: { version: '1' }, // Optional: for Atlas API version
 });
 
 let db;
