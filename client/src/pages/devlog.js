@@ -28,7 +28,7 @@ export default function DevLog() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/data/devlogs")
+    fetch("https://portfolio2025-g7wk.onrender.com//data/devlogs")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch dev logs");
         return res.json();
