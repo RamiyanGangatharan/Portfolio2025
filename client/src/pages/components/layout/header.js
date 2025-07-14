@@ -43,7 +43,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <a href="http://localhost:5000" className="nav-link text-white text-center" target="_blank" rel="noopener noreferrer">
+                <a href="https://portfolio2025-g7wk.onrender.com/" className="nav-link text-white text-center" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={SolidIcons.faServer} className="d-block mx-auto mb-1" size="lg" />
                   SERVER
                 </a>

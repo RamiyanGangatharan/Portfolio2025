@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-
+import "@/styles/globals.css";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 
@@ -25,7 +25,7 @@ export default function Contact() {
     setIsSubmitting(true); // Disable button on submit
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch("https://portfolio2025-g7wk.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
