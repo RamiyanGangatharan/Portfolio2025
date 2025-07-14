@@ -41,7 +41,7 @@ export default function Projects() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/data/projects")
+    fetch("https://portfolio2025-g7wk.onrender.com/data/projects")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch projects");
         return res.json();
