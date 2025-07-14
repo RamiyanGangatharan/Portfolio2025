@@ -133,9 +133,9 @@ router.get('/', (req, res) => {
         </div>
         <div class="content">
           <h1 style="font-size:16px; margin-top:0;">Welcome to My Backend Server!</h1>
-          <a href="http://localhost:5000/data/devlogs"><button type="button">Dev Logs</button></a>
-          <a href="http://localhost:5000/data/projects"><button type="button">Programming Projects</button></a>
-          <a href="http://localhost:3000/"><button type="button">Back to Homepage</button></a>
+          <a href="http://api.ramiyan.ca/data/devlogs"><button type="button">Dev Logs</button></a>
+          <a href="http://api.ramiyan.ca/data/projects"><button type="button">Programming Projects</button></a>
+          <a href="http://ramiyan.ca/"><button type="button">Back to Homepage</button></a>
         </div>
       </div>
     </body>
