@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 // CORS - only allow your frontend origin
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://portfolio2025-teal-delta.vercel.app"
+  "https://www.ramiyan.ca"
 ];
 
 const corsOptions = {
