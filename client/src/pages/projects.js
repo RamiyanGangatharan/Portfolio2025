@@ -65,7 +65,7 @@ export default function Projects() {
       </Head>
       <Header />
       <main className="container my-5">
-        <h2 className="display-4 mb-4 text-center">Featured Projects</h2><hr className="mb-5"/>
+        <h2 className="display-4 mb-4 text-center text-white">Featured Projects</h2><hr className="mb-5 text-white"/>
         {loading && <p>Loading projects...</p>}
         {error && <p className="text-danger">{error}</p>}
         {!loading && !error && projects.length === 0 && (

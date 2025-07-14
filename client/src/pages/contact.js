@@ -83,7 +83,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="firstname"
-                    className="form-control"
+                    className="form-control bg-light"
                     placeholder="Your first name..."
                     value={formData.firstname}
                     onChange={handleChange}
@@ -98,7 +98,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="lastname"
-                    className="form-control"
+                    className="form-control bg-light"
                     placeholder="Your last name..."
                     value={formData.lastname}
                     onChange={handleChange}
@@ -113,7 +113,7 @@ export default function Contact() {
                   <input
                     type="email"
                     id="emailaddress"
-                    className="form-control"
+                    className="form-control bg-light"
                     placeholder="Your email address..."
                     value={formData.emailaddress}
                     onChange={handleChange}
@@ -128,7 +128,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="subject"
-                    className="form-control"
+                    className="form-control bg-light"
                     placeholder="Subject..."
                     value={formData.subject}
                     onChange={handleChange}
@@ -145,7 +145,7 @@ export default function Contact() {
                   </label>
                   <textarea
                     id="emailmessage"
-                    className="form-control"
+                    className="form-control bg-light"
                     style={{ height: "315px" }}
                     placeholder="Write your message here..."
                     value={formData.emailmessage}
