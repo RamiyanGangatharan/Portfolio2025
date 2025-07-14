@@ -4,8 +4,6 @@ import RMD from "react-markdown";
 import Header from "../components/layout/header";
 import Footer from "../components/layout/footer";
 
-import '../content/mdstyles.css';
-
 export default function MarkdownPage({ title, article }) {
     return (
         <>

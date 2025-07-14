@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import "@/styles/globals.css";
+
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 

@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import "@/styles/splash.css"; 
-import "@/styles/globals.css";
 
 // This is a loading screen animation
 export default function SplashScreen({ onComplete }) {

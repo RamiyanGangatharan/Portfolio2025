@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as SolidIcons from "@fortawesome/free-solid-svg-icons";
-import "@/styles/globals.css";
 
 export default function Header() {
   return (

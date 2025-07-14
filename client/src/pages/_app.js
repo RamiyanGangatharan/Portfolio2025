@@ -1,6 +1,11 @@
 import "@/lib/fontawesome";
+
 import "@/styles/globals.css";
+import "@/styles/splash.css"; 
+import "@/pages/content/mdstyles.css"; 
+
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import { useEffect, useState } from "react";
 import SplashScreen from "./components/layout/splash"; 
 
