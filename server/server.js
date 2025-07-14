@@ -13,9 +13,23 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // CORS - only allow your frontend origin
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://portfolio2025-teal-delta.vercel.app"
+];
+
 const corsOptions = {
-  origin: "http://localhost:3000",
-  methods: ["GET", "POST"],
+  origin: function(origin, callback) {
+    // allow requests with no origin like Postman or curl
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS policy does not allow access from origin: ${origin}`));
+    }
+  },
+  methods: ["GET", "POST"]
 };
 
 app.use(cors(corsOptions));
