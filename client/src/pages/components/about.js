@@ -85,6 +85,21 @@ export default function About() {
             <p className="fst-italic mt-5 lead text-center">
               Let&apos;s connect! I&apos;m always eager to learn from others.
             </p>
+            <div className="container mx-5">
+              <a href="/resume" className="btn btn-outline-light mx-2">Resume/CV</a>
+              <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light mx-2">
+                LinkedIn
+              </a>
+              <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light mx-2">
+                GitHub
+              </a>
+              <a href="/projects" className="btn btn-outline-light mx-2">
+                Projects
+              </a>
+              <a href="/contact" className="btn btn-outline-light mx-2">
+                Contact
+              </a>
+            </div>
           </div>
         </div>
       </div>
