@@ -3,8 +3,6 @@ import Image from "next/image";
 export default function About() {
   return (
     <main className="container">
-      {/* MongoDB Test */}
-
       <div className="card bg-dark text-white shadow-lg border-0 p-4 mb-5">
         <div className="row g-4 align-items-center">
           <div className="col-lg-4 text-center"> {/* Profile Picture */}
@@ -30,6 +28,9 @@ export default function About() {
             <div className="text-center">
               <h1 className="display-6">Ramiyan Gangatharan</h1>
               <p className="subtitle">Full-Stack Software Developer</p>
+              <div className="container">
+                <a href="/hire" className="btn btn-outline-light px-5">Hire Me - Book a Consultation</a>
+              </div>
             </div>
             <hr />
 
@@ -85,21 +86,6 @@ export default function About() {
             <p className="fst-italic mt-5 lead text-center">
               Let&apos;s connect! I&apos;m always eager to learn from others.
             </p>
-            <div className="container mx-5">
-              <a href="/resume" className="btn btn-outline-light mx-2">Resume/CV</a>
-              <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light mx-2">
-                LinkedIn
-              </a>
-              <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light mx-2">
-                GitHub
-              </a>
-              <a href="/projects" className="btn btn-outline-light mx-2">
-                Projects
-              </a>
-              <a href="/contact" className="btn btn-outline-light mx-2">
-                Contact
-              </a>
-            </div>
           </div>
         </div>
       </div>
