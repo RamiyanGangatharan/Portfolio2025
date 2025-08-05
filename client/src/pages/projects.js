@@ -5,6 +5,23 @@ import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 
 function ProjectEntry({ title, description, badges = [], link }) {
+  const sortedBadges = (badges || [])
+    .slice()
+    .sort((a, b) => {
+      const yearA = /^\d{4}$/.test(a) ? parseInt(a) : null;
+      const yearB = /^\d{4}$/.test(b) ? parseInt(b) : null;
+
+      if (yearA && yearB) {
+        return yearB - yearA; // Newest year first
+      } else if (yearA) {
+        return -1;
+      } else if (yearB) {
+        return 1;
+      } else {
+        return a.localeCompare(b);
+      }
+    });
+
   return (
     <div className="col">
       <div className="card h-100 shadow-sm custom-card bg-light">
@@ -14,8 +31,15 @@ function ProjectEntry({ title, description, badges = [], link }) {
             {description || "No description provided."}
           </p>
           <div className="mb-3">
-            {(badges || []).map((badge, i) => (
-              <span key={i} className={`badge me-1 ${/^\d{4}$/.test(badge) && Number(badge) >= 2019 ? "bg-secondary" : "bg-dark" }`}>
+            {sortedBadges.map((badge, i) => (
+              <span
+                key={i}
+                className={`badge me-1 ${
+                  /^\d{4}$/.test(badge) && parseInt(badge) >= 2019
+                    ? "bg-secondary"
+                    : "bg-dark"
+                }`}
+              >
                 {badge}
               </span>
             ))}
@@ -48,7 +72,23 @@ export default function Projects() {
       })
       .then((data) => {
         if (!Array.isArray(data)) throw new Error("Malformed response");
-        setProjects(data);
+
+        // 🔽 Sort projects by newest year in badges
+        const sorted = data.slice().sort((a, b) => {
+          const extractLatestYear = (badges) => {
+            const years = badges
+              .filter((badge) => /^\d{4}$/.test(badge))
+              .map((yearStr) => parseInt(yearStr));
+            return years.length > 0 ? Math.max(...years) : 0;
+          };
+
+          const yearA = extractLatestYear(a.badges || []);
+          const yearB = extractLatestYear(b.badges || []);
+
+          return yearB - yearA; // Newest year first
+        });
+
+        setProjects(sorted);
         setLoading(false);
       })
       .catch((err) => {
@@ -65,7 +105,8 @@ export default function Projects() {
       </Head>
       <Header />
       <main className="container my-5">
-        <h2 className="display-4 mb-4 text-center text-white">Featured Projects</h2><hr className="mb-5 text-white"/>
+        <h2 className="display-4 mb-4 text-center text-white">Featured Projects</h2>
+        <hr className="mb-5 text-white" />
         {loading && <p>Loading projects...</p>}
         {error && <p className="text-danger">{error}</p>}
         {!loading && !error && projects.length === 0 && (
