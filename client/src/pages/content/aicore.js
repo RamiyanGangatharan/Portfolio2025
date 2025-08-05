@@ -69,7 +69,10 @@ Speech-to-Text (STT) → Text → Hypertext Transfer Protocol (HTTP) → LLM →
 ## What I Learned  
 ---
 
-This project taught me that even with limited time and unfamiliar tech, a strong foundation in programming makes you adaptable. I gained practical experience in integrating natural language systems into a real-time environment, learned how to communicate in a professional research setting, and reinforced the importance of iterative prototyping when working with complex systems like voice and VR. Most importantly, I learned that building innovative tech isn’t about being perfect — it's about making consistent, functional progress under constraints.
+This project taught me that even with limited time and unfamiliar tech, a strong foundation in programming makes you adaptable. 
+I gained practical experience in integrating natural language systems into a real-time environment, learned how to communicate in a professional 
+research setting, and reinforced the importance of iterative prototyping when working with complex systems like voice and VR. Most importantly, I learned 
+that building innovative tech isn't about being perfect — it's about making consistent, functional progress under constraints.
 
 ## Sources  
 ---
