@@ -11,15 +11,10 @@ function ProjectEntry({ title, description, badges = [], link }) {
       const yearA = /^\d{4}$/.test(a) ? parseInt(a) : null;
       const yearB = /^\d{4}$/.test(b) ? parseInt(b) : null;
 
-      if (yearA && yearB) {
-        return yearB - yearA; // Newest year first
-      } else if (yearA) {
-        return -1;
-      } else if (yearB) {
-        return 1;
-      } else {
-        return a.localeCompare(b);
-      }
+      if (yearA && yearB) { return yearB - yearA; } // Newest year first
+      else if (yearA) {return -1;} 
+      else if (yearB) {return 1;} 
+      else {return a.localeCompare(b);}
     });
 
   return (
@@ -27,31 +22,18 @@ function ProjectEntry({ title, description, badges = [], link }) {
       <div className="card h-100 shadow-sm custom-card bg-light">
         <div className="card-body d-flex flex-column">
           <h5 className="card-title fw-bold text-dark">{title}</h5>
-          <p className="card-text text-dark small flex-grow-1 text-justify">
-            {description || "No description provided."}
-          </p>
+          <p className="card-text text-dark small flex-grow-1 text-justify">{description || "No description provided."}</p>
           <div className="mb-3">
-            {sortedBadges.map((badge, i) => (
-              <span
-                key={i}
-                className={`badge me-1 ${
-                  /^\d{4}$/.test(badge) && parseInt(badge) >= 2019
-                    ? "bg-secondary"
-                    : "bg-dark"
-                }`}
-              >
-                {badge}
-              </span>
-            ))}
+            {
+              sortedBadges.map((badge, i) => (
+                <span key={i} className={`badge me-1 ${ /^\d{4}$/.test(badge) && parseInt(badge) >= 2019 ? "bg-secondary" : "bg-dark"}`}>
+                  {badge}
+                </span>
+              ))
+            }
           </div>
-          {link ? (
-            <a href={link} className="btn btn-outline-dark mt-auto w-100">
-              View Project
-            </a>
-          ) : (
-            <button className="btn btn-secondary mt-auto w-100" disabled>
-              Coming Soon
-            </button>
+          {link ? (<a href={link} className="btn btn-outline-dark mt-auto w-100">View Project</a>) : (
+            <button className="btn btn-secondary mt-auto w-100" disabled>Coming Soon</button>
           )}
         </div>
       </div>
@@ -73,12 +55,10 @@ export default function Projects() {
       .then((data) => {
         if (!Array.isArray(data)) throw new Error("Malformed response");
 
-        // 🔽 Sort projects by newest year in badges
+        // Sort projects by newest year in badges
         const sorted = data.slice().sort((a, b) => {
           const extractLatestYear = (badges) => {
-            const years = badges
-              .filter((badge) => /^\d{4}$/.test(badge))
-              .map((yearStr) => parseInt(yearStr));
+            const years = badges.filter((badge) => /^\d{4}$/.test(badge)).map((yearStr) => parseInt(yearStr));
             return years.length > 0 ? Math.max(...years) : 0;
           };
 
@@ -109,14 +89,10 @@ export default function Projects() {
         <hr className="mb-5 text-white" />
         {loading && <p>Loading projects...</p>}
         {error && <p className="text-danger">{error}</p>}
-        {!loading && !error && projects.length === 0 && (
-          <p className="text-muted text-center">No projects found.</p>
-        )}
+        {!loading && !error && projects.length === 0 && (<p className="text-muted text-center">No projects found.</p>)}
         {!loading && !error && projects.length > 0 && (
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            {projects.map((proj, i) => (
-              <ProjectEntry key={proj.id || i} {...proj} />
-            ))}
+            {projects.map((proj, i) => (<ProjectEntry key={proj.id || i} {...proj} />))}
           </div>
         )}
       </main>
