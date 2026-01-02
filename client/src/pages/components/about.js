@@ -77,7 +77,7 @@ export default function About() {
                   <li className="mt-3">
                     <strong>Tim Hortons</strong>
                     <br /> Highest Position: Shift Supervisor
-                    <br /> Nov. 2021 - July 2024
+                    <br /> Nov. 2021 - Present
                   </li>
                 </ul>
               </div>
