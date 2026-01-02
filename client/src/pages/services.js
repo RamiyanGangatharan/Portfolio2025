@@ -1,24 +1,32 @@
 import Head from "next/head";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
+import ServicesSidebar from "./components/services/ServicesSidebar";
+import ServicesHero from "./components/services/ServicesHero";
+import ServicesWhatIFix from "./components/services/ServicesWhatIFix";
 
 export default function Services() {
-    return ( 
-        <>
-            <head><title>RG Tech Services</title></head>
-            <Header />
-                <main className="container my-5">
-                    <h1 className="display-3 text-center text-white">Services</h1>
-                    <hr className="mb-4 text-white" />
-                    <section class="hero-section">
-                        <div className="hero-content bg-dark text-light rounded p-5">
-                            <h1>I fix computers properly.</h1>
-                            <p>Diagnostics, repairs, upgrades, and custom PC work. <br/> no guesswork, no shortcuts.</p>
-                            <a href="#" className="cta-button">Request a Job</a>
-                        </div>
-                    </section>
-                </main>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Head>
+        <title>RG Tech Services</title>
+        <meta
+          name="description"
+          content="Professional computer repair and diagnostics"
+        />
+      </Head>
+
+      <Header />
+
+      <main className="services-layout">
+        <ServicesSidebar />
+        <div className="services-content"> 
+          <ServicesHero />
+          <ServicesWhatIFix />
+        </div>
+      </main>
+
+      <Footer />
+    </>
+  );
 }
