@@ -107,3 +107,94 @@ tbody tr:nth-child(even) { background-color: var(--bg-color); }
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+/* SERVICES SECTION */
+
+.hero-section {
+    min-height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white; 
+    color: #000;
+}
+
+
+.brand {
+  margin-left: 3rem;
+}
+
+.brand-link {
+  color: white;
+  position: relative;
+}
+
+.brand-short {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.brand-expanded {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.brand-link:hover .brand-expanded {
+  max-height: 100px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand-full {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.brand-sub {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
