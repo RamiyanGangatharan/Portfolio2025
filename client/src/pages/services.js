@@ -4,6 +4,7 @@ import Footer from "./components/layout/footer";
 import ServicesSidebar from "./components/services/ServicesSidebar";
 import ServicesHero from "./components/services/ServicesHero";
 import ServicesWhatIFix from "./components/services/ServicesWhatIFix";
+import ServicesProcess from "./components/services/ServicesProcess";
 
 export default function Services() {
   return (
@@ -18,11 +19,12 @@ export default function Services() {
 
       <Header />
 
-      <main className="services-layout">
+      <main id="start" className="services-layout">
         <ServicesSidebar />
         <div className="services-content"> 
           <ServicesHero />
           <ServicesWhatIFix />
+          <ServicesProcess />
         </div>
       </main>
 

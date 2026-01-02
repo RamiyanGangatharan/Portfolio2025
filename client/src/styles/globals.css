@@ -381,3 +381,7 @@ tbody tr:nth-child(even) {
     padding: 2.5rem 2rem;
   }
 }
+
+.text-justify {
+  text-align: justify;
+}
