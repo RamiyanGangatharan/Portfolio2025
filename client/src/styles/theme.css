@@ -1,9 +1,12 @@
 /* COLOR SCHEME */
+
 :root {
-  --bg-color: #2E4439;          /* Dark forest green background */
-  --bs-body-bg: #2E4439 !important; /* Bootstrap Overiding background colour Fix :) - Ibrahim Shehadeh*/
-  --text-color: #E6E4D9;        /* Soft off-white text */
-  --accent-color: #6B8E23;      /* Olive drab for highlights */
-  --header-bg: #4A6B33;         /* Dark moss green for headers */
-  --border-color: #374F33;    
+  --bg-color: #1F2A24;          /* Deep neutral green-black */
+  --bs-body-bg: #1F2A24 !important; /* Bootstrap Overiding background colour Fix :) - Ibrahim Shehadeh*/
+
+  --text-color: #EAE8DE;        /* Cleaner off-white */
+  --accent-color: #8FAF3A;      /* Brighter olive accent */
+
+  --header-bg: #2C3A30;         /* Subtle contrast from bg */
+  --border-color: #33473C;      /* Softer borders */
 }

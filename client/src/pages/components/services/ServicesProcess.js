@@ -22,10 +22,6 @@ export default function ServicesProcess() {
           and explaining any changes or improvements made. By following this transparent, step-by-step approach, 
           you always know what's happening, why it's happening, and the value you're getting.
         </p>
-
-        <p className="m-4">
-
-        </p>
       </div>
     </section>
   );
