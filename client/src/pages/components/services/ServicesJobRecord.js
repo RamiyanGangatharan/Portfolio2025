@@ -1,3 +1,10 @@
+import SlideZero from "@/pages/components/services/Records/slideZero"
+import SlideOne from "@/pages/components/services/Records/slideOne"
+import SlideTwo from "@/pages/components/services/Records/slideTwo"
+import SlideThree from "@/pages/components/services/Records/slideThree"
+import SlideFour from "@/pages/components/services/Records/slideFour"
+import SlideFive from "@/pages/components/services/Records/slideFive"
+
 export default function ServicesJobs() {
   return (
     <section id="record" className="services-section">
@@ -15,13 +22,29 @@ export default function ServicesJobs() {
                 aria-expanded="false"
                 aria-controls="collapse2025">2025</button>
             </h2>
-            <div
-              id="collapse2025"
-              className="accordion-collapse collapse"
-              aria-labelledby="heading2025"
-              data-bs-parent="#jobsAccordion">
-              <div className="accordion-body text-light">
-                2025 job content goes here
+              <div
+                id="collapse2025"
+                className="accordion-collapse collapse"
+                aria-labelledby="heading2025"
+                data-bs-parent="#jobsAccordion">
+                <div className="accordion-body text-light">
+                  <div className="carousel-wrapper">
+                    <div id="repairCarousel" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                      <SlideZero /><SlideOne /><SlideTwo /><SlideThree />
+                      <SlideFour /><SlideFive />
+                    </div>
+
+                    {/* Controls */}
+                    <button className="carousel-control-prev" type="button" data-bs-target="#repairCarousel" data-bs-slide="prev">
+                      <span className="carousel-control-prev-icon" />
+                    </button>
+
+                    <button className="carousel-control-next" type="button" data-bs-target="#repairCarousel" data-bs-slide="next">
+                      <span className="carousel-control-next-icon" />
+                    </button>
+                  </div>
+                  </div>
               </div>
             </div>
           </div>
