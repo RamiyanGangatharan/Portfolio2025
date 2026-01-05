@@ -4,6 +4,7 @@ import SlideTwo from "@/pages/components/services/Records/slideTwo"
 import SlideThree from "@/pages/components/services/Records/slideThree"
 import SlideFour from "@/pages/components/services/Records/slideFour"
 import SlideFive from "@/pages/components/services/Records/slideFive"
+import SlideSix from "@/pages/components/services/Records/slideSix"
 
 export default function ServicesJobs() {
   return (
@@ -32,7 +33,7 @@ export default function ServicesJobs() {
                     <div id="repairCarousel" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                       <SlideZero /><SlideOne /><SlideTwo /><SlideThree />
-                      <SlideFour /><SlideFive />
+                      <SlideFour /><SlideFive /><SlideSix />
                     </div>
 
                     {/* Controls */}

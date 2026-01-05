@@ -48,12 +48,7 @@ export default function Header() {
                   Dev Log
                 </Link>
               </li>
-              <li>
-                <a href="https://portfolio2025-g7wk.onrender.com/" className="nav-link text-white text-center" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={SolidIcons.faServer} className="d-block mx-auto mb-1" size="lg" />
-                  SERVER
-                </a>
-              </li>
+            
             </ul>
           </div>
         </div>
