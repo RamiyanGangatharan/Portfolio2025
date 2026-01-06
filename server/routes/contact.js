@@ -1,5 +1,7 @@
-// api/contact.js (Vercel serverless using SMTP)
-import nodemailer from "nodemailer";
+// api/contact.js
+import sgMail from "@sendgrid/mail";
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -8,20 +10,10 @@ export default async function handler(req, res) {
 
   const { firstname, lastname, emailaddress, subject, emailmessage } = req.body;
 
-  // Create SMTP transporter
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT),
-    secure: process.env.SMTP_SECURE === "true", // true for 465, false for 587
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
-
-  const mailOptions = {
-    from: `"${firstname} ${lastname}" <${process.env.FROM_EMAIL}>`,
+  // Construct the message
+  const msg = {
     to: process.env.MY_EMAIL,
+    from: process.env.SENDGRID_VERIFIED_SENDER,
     subject: subject || "No Subject",
     text: `${firstname} ${lastname} - ${emailaddress}\n\n${emailmessage || "No Message"}`,
     html: `
@@ -39,10 +31,10 @@ export default async function handler(req, res) {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
+    await sgMail.send(msg);
     return res.status(200).json({ success: true, message: "Email sent successfully." });
   } catch (error) {
-    console.error("SMTP error:", error);
+    console.error("SendGrid error:", error.response ? error.response.body : error);
     return res.status(500).json({ success: false, message: "Email failed to send." });
   }
 }
