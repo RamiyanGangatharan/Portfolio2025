@@ -23,10 +23,9 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
 
 ## Tech Stack
 
-- **Frontend:** React, Next.js, CSS Modules (or preferred styling method)
+- **Frontend:** React, Next.js, Bootstrap
 - **Backend:** Node.js, Express (optional)
-- **Database:** MongoDB (optional)
-- **Deployment:** Vercel, Netlify, or Heroku
+- **Deployment:** Vercel
 
 ---
 
@@ -51,76 +50,7 @@ This portfolio is built with a focus on clarity, responsiveness, and accessibili
    ```bash
       npm install
    ```
-   ```bash
-      cd ../server
-   ```
-   ```bash
-      npm install
-   ```
 3. Start the development servers:
    - in `client`
       - ```bash
          npm run dev
-         ```
-   - in `server`
-     - ```bash
-       node server.js
-       ```
-<br/><br/>
-
-# Development Log
-
-## July 12, 2025
-
-### General
-- added projects to my website.
-- added markdown files to go with my project to further describe it.
-
-## July 10, 2025
-
-### General
-- Redeveloping the projects page.
-- prevented email spam by disabling the submit button in the contact page.
-- Implemented MongoDB functionality with a test database. 
-
-### Server
-- Created a Windows 96 style GUI for my server port 5000
-- Made the outbound email of the contact page aesthetically pleasing
-- Implemented database collections for dev logs and projects.
-
-## July 9, 2025
-
-### General
-- Refactored the codebase and reorganized the file structure for better semantic clarity.
-- Developed a complete contact page integrated with Nodemailer and a server using SMTP.
-- Created async ops to redirect users to the homepage at form submission, preventing spam.
-
-### Server
-- Added Nodemailer to enable SMTP email capabilities within the server.
-- Integrated Morgan middleware for request logging and improved server monitoring.
-
-## July 8, 2025
-
-### General
-
-- Implemented and styled the site header and footer  
-- Organized the project directory with long-term scalability in mind  
-- Consolidated CSS into a global file for easier management  
-- Replaced the original to-do list with a development log  
-
-### Styling
-
-- Installed Bootstrap 5.3 for layout and components  
-- Integrated Font Awesome for iconography  
-- Created a custom color palette and applied the Roboto font  
-
----
-
-## July 7, 2025
-
-- Built the foundational structure of the website  
-- Adopted a MERN stack architecture, including:  
-  - MongoDB (planned)  
-  - Express.js  
-  - Next.js  
-  - Node.js  

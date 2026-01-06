@@ -1,5 +1,25 @@
 [
   {
+    "date": "January 5th, 2026",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          "Implemented a page for my tech services.",
+          "Simplified my contact pages to use your built-in email apps.",
+          "Implemented a new font for my website.",
+          "Implemented a new colour scheme that is slightly different, yet easier to read."
+        ]
+      },
+      {
+        "title": "Server",
+        "items": [
+          "Deleted it entirely. I removed mongoDB and SMTP functionality."
+        ]
+      }
+    ]
+  },
+  {
     "date": "August 6, 2025",
     "sections": [
       {

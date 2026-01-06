@@ -1,173 +1,36 @@
 "use client";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 
 export default function Contact() {
-  const router = useRouter();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    emailaddress: "",
-    subject: "",
-    emailmessage: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true); // Disable button on submit
-
-    try {
-      const res = await fetch("https://portfolio2025-g7wk.onrender.com/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (!res.ok) {
-        const text = await res.text();
-        console.error("Server error:", text);
-        alert("Failed to send message.");
-        return;
-      }
-
-      const data = await res.json();
-
-      if (data.success) {
-        alert("Message sent successfully!");
-        setFormData({
-          firstname: "",
-          lastname: "",
-          emailaddress: "",
-          subject: "",
-          emailmessage: "",
-        });
-        router.push("/");
-      } else {
-        alert("Failed to send message.");
-      }
-    } catch (err) {
-      console.error("Fetch error:", err.message || err);
-      alert("Something went wrong.");
-    } finally {
-      setIsSubmitting(false); // Re-enable button
-    }
-  };
+  const email = "ramiyan2185@gmail.com";
 
   return (
     <>
       <Header />
       <main className="container my-5">
         <div className="d-flex justify-content-center">
-          <form
-            onSubmit={handleSubmit}
-            className="w-100 w-md-75 w-lg-75 p-4 rounded shadow bg-dark text-light"
+          <div
+            className="w-100 w-md-75 w-lg-75 p-5 rounded shadow bg-dark text-light text-center"
             style={{ marginBottom: "10%" }}
           >
-            <h1 className="display-5 text-center mb-4">Contact Me</h1>
+            <h1 className="display-5 mb-4">Contact Me</h1>
             <hr />
-            <div className="row">
-              {/* Left column */}
-              <div className="col-md-6">
-                <div className="mb-3">
-                  <label htmlFor="firstname" className="form-label lead">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstname"
-                    className="form-control bg-light"
-                    placeholder="Your first name..."
-                    value={formData.firstname}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <div className="mb-3">
-                  <label htmlFor="lastname" className="form-label lead">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastname"
-                    className="form-control bg-light"
-                    placeholder="Your last name..."
-                    value={formData.lastname}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <div className="mb-3">
-                  <label htmlFor="emailaddress" className="form-label lead">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="emailaddress"
-                    className="form-control bg-light"
-                    placeholder="Your email address..."
-                    value={formData.emailaddress}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <div className="mb-3">
-                  <label htmlFor="subject" className="form-label lead">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="form-control bg-light"
-                    placeholder="Subject..."
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Right column */}
-              <div className="col-md-6 d-flex flex-column">
-                <div className="flex-grow-1 mb-3">
-                  <label htmlFor="emailmessage" className="form-label lead">
-                    Message
-                  </label>
-                  <textarea
-                    id="emailmessage"
-                    className="form-control bg-light"
-                    style={{ height: "315px" }}
-                    placeholder="Write your message here..."
-                    value={formData.emailmessage}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-
-              <div>
-                <button
-                  type="submit"
-                  className="btn btn-outline-light w-100"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Sending, please wait, SMTP takes a bit..." : "Submit"}
-                </button>
-              </div>
-            </div>
-          </form>
+            <p className="lead my-4">
+              I've removed the contact form for simplicity. I am currently working on a new implementation. You can email me directly:
+            </p>
+            <a
+              href={`mailto:${email}`}
+              className="btn btn-outline-light btn-lg"
+            >
+              Email Me
+            </a>
+            <p className="mt-4 small text-light">
+              I usually respond within 24 hours. Looking forward to hearing from you! 🙂
+            </p>
+          </div>
         </div>
-        <p className="text-center small text-muted mt-3">Please hire me 🙂</p>
       </main>
       <Footer />
     </>
