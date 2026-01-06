@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 export default function slideSix() {
   return (
       <div className="repair-slide text-center">
         <div className="repair-image">
-          <img
+          <Image
             src="/img/serviceImages/personalLaptop3_Keyboard"
             alt="Laptop Keyboard replacement"
+            width={600}      
+            height={400}     
+            className="rounded" 
           />
         </div>
         <h4 className="mt-3">Personal Laptop Keyboard Replacement</h4>
