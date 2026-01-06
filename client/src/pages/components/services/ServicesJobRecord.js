@@ -8,7 +8,7 @@ import SlideSix from "@/pages/components/services/Records/slideSix"
 
 export default function ServicesJobs() {
   return (
-    <section id="record" className="services-section">
+    <section id="work" className="services-section">
       <div className="services-card bg-dark text-light">
         <h2 className="section-title text-center mb-4">Job Record</h2>
         <div className="accordion accordion-flush" id="jobsAccordion">
