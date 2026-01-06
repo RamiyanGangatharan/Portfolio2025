@@ -17,7 +17,7 @@ export default function ServicesWhatIFix() {
               <li>
                 Custom PC Builds
                 <ul className="sub-list">
-                  <li>PC's, Workstations, Home Offices</li>
+                  <li>PC&apos;s, Workstations, Home Offices</li>
                   <li>Component Selection</li>
                 </ul>
               </li>

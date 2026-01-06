@@ -13,7 +13,7 @@ export default function slideOne() {
         />
         </div>
         <h4 className="mt-3">Laptop Battery Replacement</h4>
-        <p className="opacity-75">Replaced a client's laptop battery after years of use.</p>
+        <p className="opacity-75">Replaced a client&apos;s laptop battery after years of use.</p>
       </div>
   );
 }

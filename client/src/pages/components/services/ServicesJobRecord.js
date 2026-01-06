@@ -91,7 +91,7 @@ export default function ServicesJobs() {
                   <p>
                     One of my co-workers bought a computer from a relative was asking to clean up thier 
                     computer to make it faster and so I decided the best course of action was to reinstall 
-                    the operating system as they didn't need any of the installed applications.
+                    the operating system as they didn&apos;t need any of the installed applications.
                   </p>
                 </div>
               </div>
