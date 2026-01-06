@@ -13,7 +13,7 @@ export default function slideThree() {
           />
         </div>
         <h4 className="mt-3">Laptop WiFi Card Upgrade</h4>
-        <p className="opacity-75">Replaced a client's WiFi card.</p>
+        <p className="opacity-75">Replaced a client&apos;s WiFi card.</p>
       </div>
   );
 }

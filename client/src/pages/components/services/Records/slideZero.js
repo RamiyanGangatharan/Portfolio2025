@@ -14,7 +14,7 @@ export default function slideZero() {
           
         </div>
         <h4 className="mt-3">Desktop CPU Repaste</h4>
-        <p className="opacity-75">As I replaced a client's CPU, this is a picture of it being repasted.</p>
+        <p className="opacity-75">As I replaced a client&apos;s CPU, this is a picture of it being repasted.</p>
       </div>
   );
 }

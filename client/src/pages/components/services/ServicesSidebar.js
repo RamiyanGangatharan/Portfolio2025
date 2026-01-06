@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function ServicesSidebar() {
   return (
     <aside className="services-sidebar">
-      <a href="/" className="sidebar-brand">
-        <span className="brand-name">RG Tech Services</span><br></br>
+      <Link href="/" className="sidebar-brand">
+        <span className="brand-name">RG Tech Services</span><br />
         <span className="brand-sub">Ramiyan Gangatharan</span>
-      </a>
+      </Link>
 
       <nav className="sidebar-nav">
         <a href="#start" className="active">Overview</a>

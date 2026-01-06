@@ -20,7 +20,7 @@ export default function ServicesProcess() {
           time to resolve firmware or driver issues, and I always keep the client informed along the way.
           Finally, I deliver the finished product and review it with you. This includes testing, final adjustments, 
           and explaining any changes or improvements made. By following this transparent, step-by-step approach, 
-          you always know what's happening, why it's happening, and the value you're getting.
+          you always know what&apos;s happening, why it&apos;s happening, and the value you&apos;re getting.
         </p>
       </div>
     </section>
