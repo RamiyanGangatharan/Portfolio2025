@@ -13,7 +13,7 @@ export default function slideFive() {
           />
         </div>
         <h4 className="mt-3">Personal Laptop Repaste</h4>
-        <p className="opacity-75">As an effort to renovate my laptop, I improved my thermals with new thermal paste.</p>
+        <p className="opacity-75">As an effort to renovate my laptop, I improved my thermals with new Noctua thermal paste.</p>
       </div>
   );
 }
