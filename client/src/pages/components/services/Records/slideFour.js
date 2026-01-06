@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 export default function slideFour() {
   return (
       <div className="repair-slide text-center">
         <div className="repair-image">
-          <img
+          <Image
             src="/img/serviceImages/personalLaptop2_repaste"
             alt="Laptop battery replacement"
+            width={600}      
+            height={400}     
+            className="rounded" 
           />
         </div>
         <h4 className="mt-3">Personal Laptop Repaste</h4>
