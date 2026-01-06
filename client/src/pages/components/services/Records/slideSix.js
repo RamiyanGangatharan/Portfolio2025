@@ -1,6 +1,5 @@
 export default function slideSix() {
   return (
-    <div className="carousel-item active">
       <div className="repair-slide text-center">
         <div className="repair-image">
           <img
@@ -15,6 +14,5 @@ export default function slideSix() {
             labourious as my keyboard is held down by 72 screws.
         </p>
       </div>
-    </div>
   );
 }

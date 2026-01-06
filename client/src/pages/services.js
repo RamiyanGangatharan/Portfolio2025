@@ -6,6 +6,7 @@ import ServicesHero from "./components/services/ServicesHero";
 import ServicesWhatIFix from "./components/services/ServicesWhatIFix";
 import ServicesProcess from "./components/services/ServicesProcess";
 import ServicesJobs from "./components/services/ServicesJobRecord";
+import ServicesContact from "./components/services/ServicesContact";
 
 export default function Services() {
   return (
@@ -27,6 +28,7 @@ export default function Services() {
           <ServicesWhatIFix />
           <ServicesProcess />
           <ServicesJobs />
+          <ServicesContact />
         </div>
       </main>
 

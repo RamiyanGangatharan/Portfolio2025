@@ -13,7 +13,7 @@ export default function ServicesJobs() {
         <h2 className="section-title text-center mb-4">Job Record</h2>
         <div className="accordion accordion-flush" id="jobsAccordion">
 
-          {/* 2025 */}
+          {/* 2025 */} 
           <div className="accordion-item">
             <h2 className="accordion-header" id="heading2025">
               <button className="accordion-button collapsed bg-light"
@@ -32,9 +32,29 @@ export default function ServicesJobs() {
                   <div className="carousel-wrapper">
                     <div id="repairCarousel" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
-                      <SlideZero /><SlideOne /><SlideTwo /><SlideThree />
-                      <SlideFour /><SlideFive /><SlideSix />
+                      <div className="carousel-item active">
+                        <SlideZero />
+                      </div>
+                      <div className="carousel-item">
+                        <SlideOne />
+                      </div>
+                      <div className="carousel-item">
+                        <SlideTwo />
+                      </div>
+                      <div className="carousel-item">
+                        <SlideThree />
+                      </div>
+                      <div className="carousel-item">
+                        <SlideFour />
+                      </div>
+                      <div className="carousel-item">
+                        <SlideFive />
+                      </div>
+                      <div className="carousel-item">
+                        <SlideSix />
+                      </div>
                     </div>
+
 
                     {/* Controls */}
                     <button className="carousel-control-prev" type="button" data-bs-target="#repairCarousel" data-bs-slide="prev">
