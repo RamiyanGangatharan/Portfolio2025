@@ -5,7 +5,7 @@ export default function slideFive() {
       <div className="repair-slide text-center">
         <div className="repair-image">
           <Image
-            src="/img/serviceImages/personalLaptop3_GPU"
+            src="/img/serviceImages/personalLaptop3_GPU.jpg"
             alt="Laptop battery replacement"
             width={600}      
             height={400}     

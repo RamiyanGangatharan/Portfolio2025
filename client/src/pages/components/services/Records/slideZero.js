@@ -5,7 +5,7 @@ export default function slideZero() {
       <div className="repair-slide text-center">
         <div className="repair-image">
           <Image
-            src="/img/serviceImages/ryzen_paste"
+            src="/img/serviceImages/ryzen_paste.jpg"
             alt="Desktop CPU Repaste"
             width={600}      
             height={400}     

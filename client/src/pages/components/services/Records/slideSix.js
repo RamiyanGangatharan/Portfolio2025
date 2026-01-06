@@ -5,7 +5,7 @@ export default function slideSix() {
       <div className="repair-slide text-center">
         <div className="repair-image">
           <Image
-            src="/img/serviceImages/personalLaptop3_Keyboard"
+            src="/img/serviceImages/personalLaptop3_Keyboard.jpg"
             alt="Laptop Keyboard replacement"
             width={600}      
             height={400}     

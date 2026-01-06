@@ -5,7 +5,7 @@ export default function slideTwo() {
       <div className="repair-slide text-center">
         <div className="repair-image">
           <Image
-            src="/img/serviceImages/clientLaptop2"
+            src="/img/serviceImages/clientLaptop2.jpg"
             alt="Laptop battery replacement"
             width={600}      
             height={400}     

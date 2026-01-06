@@ -5,7 +5,7 @@ export default function slideFour() {
       <div className="repair-slide text-center">
         <div className="repair-image">
           <Image
-            src="/img/serviceImages/personalLaptop2_repaste"
+            src="/img/serviceImages/personalLaptop2_repaste.jpg"
             alt="Laptop battery replacement"
             width={600}      
             height={400}     

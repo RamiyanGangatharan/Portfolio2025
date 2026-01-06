@@ -5,7 +5,7 @@ export default function slideThree() {
       <div className="repair-slide text-center">
         <div className="repair-image">
           <Image
-            src="/img/serviceImages/clientWiFiCard"
+            src="/img/serviceImages/clientWiFiCard.jpg"
             alt="Laptop WiFi Card Upgrade"
             width={600}      
             height={400}     
