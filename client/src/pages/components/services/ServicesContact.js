@@ -12,6 +12,7 @@ export default function ServiceContact() {
     lastname: "",
     email: "",
     deviceType: "",
+    subject: "Contract Job --> website",
     message: "",
   });
 
