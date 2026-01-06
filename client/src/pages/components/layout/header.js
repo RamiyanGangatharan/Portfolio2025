@@ -19,6 +19,12 @@ export default function Header() {
                 </Link>
               </li>
               <li>
+                  <Link href="/services" className="nav-link text-center text-white">
+                    <FontAwesomeIcon icon={SolidIcons.faBuilding} className="d-block mx-auto mb-1" size="lg" />
+                    Services
+                  </Link>
+              </li>
+              <li>
                 <Link href="/projects" className="nav-link text-white text-center">
                   <FontAwesomeIcon icon={SolidIcons.faFolderOpen} className="d-block mx-auto mb-1" size="lg" />
                   Projects
@@ -42,12 +48,7 @@ export default function Header() {
                   Dev Log
                 </Link>
               </li>
-              <li>
-                <a href="https://portfolio2025-g7wk.onrender.com/" className="nav-link text-white text-center" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={SolidIcons.faServer} className="d-block mx-auto mb-1" size="lg" />
-                  SERVER
-                </a>
-              </li>
+            
             </ul>
           </div>
         </div>

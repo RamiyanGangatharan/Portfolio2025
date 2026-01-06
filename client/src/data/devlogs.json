@@ -1,0 +1,127 @@
+[
+  {
+    "date": "August 6, 2025",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          "Created more articles for my projects and have finished all of them."
+        ]
+      },
+      {
+        "title": "Server",
+        "items": [
+          "Modified my MongoDB server to display projects properly."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 14, 2025",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          "Deployed the server onto Render.",
+          "Deployed the front end to Vercel.",
+          "Fixed CSS issues (Ibrahim contributed)",
+          "Inserted more articles via markdown files"
+        ]
+      },
+      {
+        "title": "Server",
+        "items": [
+          "Converted all my links and endpoints to use the deployed server",
+          "Working on an admin page (planning phase)"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 13, 2025",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          "Added new projects to my website.",
+          "Created accompanying markdown files to provide detailed descriptions for each project."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 11, 2025",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          "Redeveloping the projects page.",
+          "Prevented email spam by disabling the submit button in the contact page.",
+          "Implemented MongoDB functionality with a test database."
+        ]
+      },
+      {
+        "title": "Server",
+        "items": [
+          "Made the outbound email of the contact page aesthetically pleasing",
+          "Created a Windows 96 style GUI for my server port 5000",
+          "Implemented database collections for dev logs and projects."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 10, 2025",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          "Refactored the codebase and reorganized the file structure for better semantic clarity.",
+          "Developed a complete contact page integrated with Nodemailer and a server using SMTP.",
+          "Created async ops to redirect users to the homepage at form submission, preventing spam."
+        ]
+      },
+      {
+        "title": "Server",
+        "items": [
+          "Added Nodemailer to enable SMTP email capabilities within the server.",
+          "Integrated Morgan middleware for request logging and improved server monitoring."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 9, 2025",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          "Created and styled a header and footer for the website.",
+          "Organized a file structure for an ideal long term plan.",
+          "Split the CSS files by usage and joined them in a global file.",
+          "Removed the TO-DO list and replaced with a development log."
+        ]
+      },
+      {
+        "title": "Styling",
+        "items": [
+          "Installed Bootstrap 5.3.",
+          "Installed Font Awesome for free icons.",
+          "Made a colour scheme and chose the Roboto font."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "July 8, 2025",
+    "sections": [
+      {
+        "title": "Foundation",
+        "items": [
+          "Built the foundational structure of the website.",
+          "Conforming to the MERN Stack (but using NEXT), I have used the following technologies:"
+        ]
+      }
+    ]
+  }
+]

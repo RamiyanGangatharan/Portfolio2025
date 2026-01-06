@@ -1,0 +1,174 @@
+[
+  {
+    "title": "Portfolio Project",
+    "description": "This is a full-stack MERN application (MongoDB, Express, Next.js, Node.js) built to showcase my development skills. It features a dynamic frontend using Next.js, a backend API with Express, and a MongoDB database. The project includes an admin panel for managing content and is continuously updated like a live service, reflecting my growth and new skillsets.",
+    "badges": [
+      "MongoDB",
+      "Express",
+      "Next.js",
+      "Node.js",
+      "HTML",
+      "CSS (Bootstrap)",
+      "2025"
+    ],
+    "link": "/content/portfolio"
+  },
+  {
+    "title": "Urban Fracture",
+    "description": "A zombie-themed FPS built in Unity Engine 6 with Garry's Mod-style visuals. Based off of my previous ventures like my internship and my Dark Souls prototype, I hand-coded player systems (movement, sprint, crouch, lean), gun mechanics, and AI using NavMesh. Created after my MRC Studio internship, with detailed documentation for clarity and future updates.",
+    "badges": [
+      "Unity Engine 6",
+      "C#",
+      "UML",
+      "AI",
+      "2025"
+    ],
+    "link": "/content/urbanfracture"
+  },
+  {
+    "title": "AI Core - VR Assistant",
+    "description": "At MRC Studio, I developed a Unity-based AI assistant prototype enabling real-time interaction with local large language models across XR, mobile, and desktop. The system integrates Meta’s voice dictation and text-to-speech with a FastAPI backend for continuous speech transcription and natural language responses, advancing immersive conversational agents.",
+    "badges": [
+      "Unity Engine 5",
+      "C#",
+      "UML",
+      "AI",
+      "Meta TTS",
+      "Meta STT",
+      "VR/AR",
+      "2025"
+    ],
+    "link": "/content/aicore"
+  },
+  {
+    "title": "Dark Souls Prototype",
+    "description": "Developing a Souls-like 3D game in Unity 6 using URP, focusing on third-person character systems, responsive combat, and immersive level design. Implemented core gameplay mechanics including movement physics, camera/player controls, animation syncing, special abilities, and collider interactions.",
+    "badges": [
+      "Unity Engine 6",
+      "C#",
+      "2025"
+    ],
+    "link": "/content/darksouls"
+  },
+  {
+    "title": "Durham College Hackathon",
+    "description": "At Durham College's inaugural 24-hour hackathon, my team placed 5th with Driver Dashboard, a React Native app delivering real-time bus updates to riders and enabling drivers to report delays or emergencies. The backend used Python for data processing and machine learning, with Ngrok for networking. This experience sharpened my skills and fostered collaboration.",
+    "badges": [
+      "React Native",
+      "Ngrok",
+      "API",
+      "Bootstrap",
+      "Data Analytics",
+      "2025"
+    ],
+    "link": "/content/hackathon"
+  },
+  {
+    "title": "SATS - Capstone",
+    "description": "As part of a team of five, we developed the Student Advisor Ticketing System (SATS), a tablet-based app to streamline appointment scheduling for Durham College’s SEIT faculty. The system features an accessible interface, supports in-person and virtual bookings, integrates with email servers via REST API, manages dynamic queues, and provides analytics to enhance service quality.",
+    "badges": [
+      "React Native",
+      "SMTP",
+      "Mobile/Web",
+      "Bootstrap",
+      "2025"
+    ],
+    "link": "/content/capstone"
+  },
+  {
+    "title": "AWS - Reading Nook",
+    "description": "Collaborated in a three-person group to modernize The Reading Nook’s inventory website by migrating it to AWS using Docker containerization and ECS Fargate. Implemented a Flask backend, Next.js frontend, and PostgreSQL database on AWS RDS with CI/CD pipelines via GitHub Actions, multi-zone deployment for high availability, and secure credential management through AWS Secrets Manager.",
+    "badges": [
+      "AWS",
+      "Docker",
+      "ECS",
+      "Fargate",
+      "PostgreSQL",
+      "GitHub Actions",
+      "CI/CD",
+      "2024"
+    ],
+    "link": "/content/readingnook"
+  },
+  {
+    "title": "Hospital Database System",
+    "description": "In a team of three, designed and implemented a hospital database system normalized to 3rd normal form, including multiple related tables and comprehensive documentation.",
+    "badges": [
+      "Microsoft SQL Server",
+      "UML",
+      "Crow's Foot",
+      "2024"
+    ],
+    "link": "/content/hospital"
+  },
+  {
+    "title": "Harmony Hub Website",
+    "description": "Collaborated in a two-person team to develop a full-stack web application using the MERN stack. Built a responsive frontend using custom CSS and Bootstrap, designed user flows, and integrated APIs for dynamic data rendering. On the backend, implemented Express server routes, and performed CRUD operations on JSON files. The app featured clean UI design, structured navigation, and emphasized modular, scalable code practices—offering hands-on experience with modern full-stack development.",
+    "badges": [
+      "Node.js",
+      "Express",
+      "Bootstrap",
+      "MongoDB",
+      "React",
+      "2024"
+    ],
+    "link": "/content/harmonyhub"
+  },
+  {
+    "title": "Blackjack",
+    "description": "A semester-long OOP III project where a team of five created a 2D Blackjack game on Windows Forms, including a bonus game mode.",
+    "badges": [
+      "Windows Forms",
+      ".NET",
+      "C#",
+      "2024"
+    ],
+    "link": "/content/blackjack"
+  },
+  {
+    "title": "Web Development Enterprise",
+    "description": "Semester-long project focused on Java Servlet pages using Tomcat and Java EE, emphasizing JavaDocs and enterprise-grade server applications. The project simulated a school system to track faculty and students.",
+    "badges": [
+      "Java EE",
+      "Web Sockets",
+      "Servlets",
+      "Database",
+      "2024"
+    ],
+    "link": "/content/enterprise"
+  },
+  {
+    "title": "Gasoline Tracker",
+    "description": "A Windows Forms C# application built as a summer project to track gas expenditures using a database and CRUD operations, inspired by fluctuating fuel prices during the pandemic.",
+    "badges": [
+      "Windows Forms",
+      ".NET",
+      "C#",
+      "Database",
+      "2024"
+    ],
+    "link": "/content/gastracker"
+  },
+  {
+    "title": "Card Deck Builder",
+    "description": "A Windows Forms app developed in C# as part of an OOP II assignment. It focused on collections and inheritance to manipulate lists and arrays for creating and managing card decks.",
+    "badges": [
+      "Windows Forms",
+      ".NET",
+      "C#",
+      "2023"
+    ],
+    "link": "/content/carddeck"
+  },
+  {
+    "title": "Auto Shop Form",
+    "description": "A Windows Forms application developed in C# for an OOP II assignment simulating a car dealership’s internal sales system. Demonstrated OOP principles with features like inventory management, sales processing, and user interface design.",
+    "badges": [
+      "Windows Forms",
+      ".NET",
+      "C#",
+      "2023"
+    ],
+    "link": "/content/autoshop"
+  }
+]

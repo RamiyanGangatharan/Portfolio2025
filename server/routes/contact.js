@@ -1,13 +1,18 @@
-const express = require('express');
-const router = express.Router();
-const transporter = require('../config/mailer');
+// api/contact.js (works with Vercel serverless)
+import sgMail from "@sendgrid/mail";
 
-router.post('/', (req, res) => {
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ success: false, message: "Method not allowed" });
+  }
+
   const { firstname, lastname, emailaddress, subject, emailmessage } = req.body;
 
-  transporter.sendMail({
-    from: `"${firstname} ${lastname}" <${emailaddress}>`,
-    to: process.env.SMTP_USER,
+  const msg = {
+    to: process.env.MY_EMAIL,
+    from: process.env.SENDGRID_VERIFIED_SENDER,
     subject: subject || "No Subject",
     text: `${firstname} ${lastname} - ${emailaddress}\n\n${emailmessage || "No Message"}`,
     html: `
@@ -17,20 +22,18 @@ router.post('/', (req, res) => {
           <p><strong>Email:</strong> ${emailaddress}</p>
           <p><strong>Date:</strong> ${new Date().toLocaleDateString()}</p>
         </div>
-        <div style="margin-bottom: 5px;"><p>To whom it may concern,</p></div>
-        <div style="white-space: pre-wrap;"><p>${emailmessage || "No message provided."}</p></div>
-        <div style="margin-top: 30px;"><p>Sincerely,</p><p>${firstname} ${lastname}</p></div>
+        <div style="white-space: pre-wrap;">
+          <p>${emailmessage || "No message provided."}</p>
+        </div>
       </div>
     `,
-  })
-  .then(info => {
-    console.log("Email sent:", info.messageId);
-    res.status(200).json({ success: true, message: "Email sent successfully." });
-  })
-  .catch(error => {
-    console.error("Email failed:", error);
-    res.status(500).json({ success: false, message: "Email failed to send." });
-  });
-}); 
+  };
 
-module.exports = router;
+  try {
+    await sgMail.send(msg);
+    return res.status(200).json({ success: true, message: "Email sent successfully." });
+  } catch (error) {
+    console.error("SendGrid error:", error);
+    return res.status(500).json({ success: false, message: "Email failed to send." });
+  }
+}
