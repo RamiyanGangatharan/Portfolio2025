@@ -18,7 +18,7 @@ export default function Contact() {
             <h1 className="display-5 mb-4">Contact Me</h1>
             <hr />
             <p className="lead my-4">
-              I've removed the contact form for simplicity. I am currently working on a new implementation. You can email me directly:
+              I&apos;ve removed the contact form for simplicity. I am currently working on a new implementation. You can email me directly:
             </p>
             <a
               href={`mailto:${email}`}
