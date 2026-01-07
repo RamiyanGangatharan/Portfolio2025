@@ -1,5 +1,15 @@
 [
   {
+    "title": "Hardpoint – Video Game",
+    "description": "A work-in-progress first-person shooter inspired by CS:GO. This project allows me to explore game development fundamentals, including physics, AI, and level design, while experimenting with Unity 6 and C#.",
+    "badges": [
+      "Unity 6",
+      "C#",
+      "2026"
+    ],
+    "link": "/content/hardpoint"
+  },
+  {
     "title": "Portfolio Project",
     "description": "This is a full-stack MERN application (MongoDB, Express, Next.js, Node.js) built to showcase my development skills. It features a dynamic frontend using Next.js, a backend API with Express, and a MongoDB database. The project includes an admin panel for managing content and is continuously updated like a live service, reflecting my growth and new skillsets.",
     "badges": [
