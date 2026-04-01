@@ -451,3 +451,12 @@ tbody tr:nth-child(even) {
   border-color: #aaa;
   box-shadow: none;
 }
+
+.icon-hover {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.15);
+  color: #2ecc71;
+}
