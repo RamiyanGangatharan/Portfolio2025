@@ -44,8 +44,65 @@ export default function Home() {
           <p className="mt-4 text-white-50 lead">Open to Opportunities</p>
         </div>
 
+        {/* PROJECTS SECTION */}
         <div className="text-white bg-dark shadow-lg border-0 p-5 mb-5 mt-5 rounded w-100">
-          <h2 className="display-4 fw-bold">Experience &amp; Projects</h2>
+          <h2 className="display-4 fw-bold">Projects</h2>
+          <hr className="w-50 mx-auto opacity-25" />
+
+          <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
+            <div className="card-body">
+              <p className="card-title text-dark display-5">TabletopSync Chat System</p>
+              <p className="card-text text-dark fw-bold fst-italic mb-2">
+                Real-time Multithreaded Chat Application
+              </p>
+              <hr className="w-75 mx-auto opacity-25" />
+              <ul className="text-start ms-5 text-dark">
+                <li>Built a client-server chat system using Java sockets</li>
+                <li>Implemented multithreading for handling multiple users concurrently</li>
+                <li>Designed MVC architecture for clean separation of concerns</li>
+                <li>Added command handling system (e.g., /users, /quit)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
+            <div className="card-body">
+              <p className="card-title text-dark display-5">AI Assistant (VR/XR + Desktop)</p>
+              <p className="card-text text-dark fw-bold fst-italic mb-2">
+                Unity + Local LLM Integration
+              </p>
+              <hr className="w-75 mx-auto opacity-25" />
+              <ul className="text-start ms-5 text-dark">
+                <li>Developed an AI assistant using Unity and FastAPI</li>
+                <li>Integrated speech-to-text and text-to-speech pipelines</li>
+                <li>Enabled real-time conversational interaction with local LLMs</li>
+                <li>Designed for immersive VR/XR environments</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
+            <div className="card-body">
+              <p className="card-title text-dark display-5">FILMASH</p>
+              <p className="card-text text-dark fw-bold fst-italic mb-2">
+                Indie Movie Discovery App
+              </p>
+              <hr className="w-75 mx-auto opacity-25" />
+              <ul className="text-start ms-5 text-dark">
+                <li>Built a full-stack web app for discovering indie films</li>
+                <li>Implemented dynamic UI and responsive design</li>
+                <li>Focused on user experience and content accessibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <button className="btn btn-outline-light btn-lg px-5 mt-3" onClick={() => window.location.href = "/projects"}>
+            View More Projects
+          </button>
+        </div>
+
+        <div className="text-white bg-dark shadow-lg border-0 p-5 mb-5 mt-5 rounded w-100">
+          <h2 className="display-4 fw-bold">Experience</h2>
           <hr className="w-50 mx-auto opacity-25" />
 
           <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
@@ -56,19 +113,55 @@ export default function Home() {
               <hr className="w-75 mx-auto opacity-25" />
               <div className="ms-2">
                 <ul className="text-start ms-5 text-dark">
-                  <li>Developed a Unity-based AI assistant for VR/XR &amp; desktop using local LLMs</li>
-                    <ul>
+                  <li className="text-start ms-5 text-dark">Developed a Unity-based AI assistant for VR/XR &amp; desktop using local LLMs</li>
+                    <ul className="text-start ms-5 text-dark">
                       <li>Integrated voice dictation + text-to-speech with a REST pipeline using FastAPI</li>
                       <li>Built real-time speech-to-AI interaction with transcription, JSON requests, &amp; live responses</li>
                       <li>Prototyping conversational systems for immersive environments</li>
                     </ul>
                   
-                  <li>Building a Souls-like 3D game</li>
-                  <ul>
+                  <li className="text-start ms-5 text-dark">Building a Souls-like 3D game</li>
+                  <ul className="text-start ms-5 text-dark">
                     <li>Implemented player movement, camera systems, animations, abilities, &amp; collisions</li>
                     <li>Focused on responsive combat &amp; immersive level design</li>
                     <li>Strengthened skills in Unity, AI integration, &amp; cross-platform development</li>
                   </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
+            <div className="card-body">
+              <p className="card-title text-dark display-5">Freelance Software Consultant</p>
+              <p className="card-text text-dark mb-2">[ January 2023 - Present | Hybrid ]</p>
+              <hr className="w-75 mx-auto opacity-25" />
+              <div className="ms-2">
+                <ul className="text-start ms-5 text-dark">
+                  <li className="text-start ms-5 text-dark">I gave advice to other developers and did code reviews.</li>
+                </ul>          
+              </div>
+              <p className="fw-bold lead">Notable Projects</p>
+              <hr className="w-25 mx-auto opacity-25"></hr>
+                  <ul className="text-start ms-5 text-dark">
+                    <li className="text-start ms-5 text-dark">FILMASH: An indie movie application.</li>
+                    <li className="text-start ms-5 text-dark">KIBATI Auto Shop: A storefront for car parts.</li>
+                  </ul>
+            </div>
+          </div>
+            
+
+          <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
+            <div className="card-body">
+              <p className="card-title text-dark display-5">Programming Tutor</p>
+              <p className="card-text text-dark fw-bold fst-italic mb-2">Private Tutor</p>
+              <p className="card-text text-dark mb-2"> [ September 2023 - April 2025 | Hybrid ]</p>
+              <hr className="w-75 mx-auto opacity-25" />
+              <div className="ms-2">
+                <ul className="text-start ms-5 text-dark">
+                  <li className="text-start ms-5 text-dark">Provide personalized programming tutoring in C#, Java, Python, SQL, and general web development</li>
+                  <li className="text-start ms-5 text-dark">Tailor lessons to individual learning styles &amp; goals</li>
+                  <li className="text-start ms-5 text-dark">Help students build strong coding foundations &amp; problem-solving skills</li>
                 </ul>
               </div>
             </div>
@@ -81,8 +174,24 @@ export default function Home() {
               <hr className="w-75 mx-auto opacity-25" />
               <div className="ms-2">
                 <ul className="text-start ms-5 text-dark">
-                
-                    <li>Shift Supervisor</li>
+                    <li className="text-start ms-5">Shift Supervisor</li>
+                      <ul className="text-start ms-5">
+                        <li>Lead teams of 3-12 employees in a fast-paced environment</li>
+                        <li>Ensure high-quality customer service &amp; efficient operations</li>
+                        <li>Handle cash management, inventory control, and staff</li>
+                      </ul>
+                      <li className="text-start ms-5">Team Lead</li>
+                      <ul className="text-start ms-5">
+                        <li>Intermediary position where I was an apprentice to my manager.</li>
+                        <li>Assisted in training, scheduling, &amp; daily operations</li>
+                        <li>Gained leadership experience &amp; operational knowledge</li>
+                      </ul>     
+                      <li className="text-start ms-5">Team Member/Counter Staff</li>
+                      <ul className="text-start ms-5">
+                        <li>Provided customer service in a high-volume setting</li>
+                        <li>Prepared food &amp; beverages while maintaining quality standards</li>
+                        <li>Collaborated with team members to ensure smooth operations</li>
+                      </ul>                 
                   </ul>
               </div>
             </div>
