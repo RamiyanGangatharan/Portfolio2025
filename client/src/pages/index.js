@@ -5,6 +5,7 @@ import Footer from "./components/layout/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,8 +22,8 @@ export default function Home() {
           <p className="mt-4 text-white fw-bold fst-italic">Ramiyan Gangatharan</p>
 
           <div className="mt-5 d-flex justify-content-center gap-3 flex-wrap">
-            <a href="/projects" className="btn btn-outline-light btn-lg px-5">View Projects</a>
-            <a href="/resume" className="btn btn-outline-light btn-lg px-5">View Resume</a>
+            <Link href="/projects" className="btn btn-outline-light btn-lg px-5">View Projects</Link>
+            <Link href="/resume" className="btn btn-outline-light btn-lg px-5">View Resume</Link>
           </div>
 
           <p className="mt-5 text-white underline">Contact Me</p>
