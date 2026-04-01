@@ -53,41 +53,121 @@ export default function Home() {
 
         {/* PROJECTS SECTION */}
         <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
-        <h2 className="fw-bold fs-2 fs-md-1">FeaturedProjects</h2>
-        <hr className="w-50 mx-auto opacity-25" />
-
+          <h2 className="fw-bold fs-2 fs-md-1">Featured Projects</h2>
+          <hr className="w-50 mx-auto opacity-25" />
         <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
           <div className="card-body text-start">
 
             <h3 className="text-dark fw-bold fs-5 fs-md-3">
-              TabletopSync Chat System
+              Portfolio Website
             </h3>
 
             <p className="text-dark fw-semibold fst-italic small mb-2">
-              Real-time Multithreaded Chat Application
+              Full Stack Developer • Independent Project
             </p>
 
             <div className="mb-2 d-flex flex-wrap gap-2">
-              <span className="badge bg-dark">Java</span>
-              <span className="badge bg-dark">Sockets</span>
-              <span className="badge bg-dark">Multithreading</span>
-              <span className="badge bg-dark">MVC</span>
+              <span className="badge bg-dark">React</span>
+              <span className="badge bg-dark">Next.js</span>
+              <span className="badge bg-dark">Bootstrap</span>
+              <span className="badge bg-dark">MERN</span>
             </div>
 
             <ul className="ps-3 text-dark mb-0">
-              <li>Built a real-time client-server chat system using Java sockets</li>
-              <li>Handled concurrent users with multithreading</li>
-              <li>Structured using MVC for scalability</li>
-              <li>Implemented command handling (/users, /quit)</li>
+              <li>Built a personal portfolio to showcase projects and experience</li>
+              <li>Developed responsive UI with modern frontend practices</li>
+              <li>Structured for scalability and future feature expansion</li>
             </ul>
 
           </div>
         </div>
 
-        <Link href="/projects" className="btn btn-outline-light w-md-auto">
-              View More Projects
+        {/* VR AI Assistant */}
+        <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
+          <div className="card-body text-start">
+
+            <h3 className="text-dark fw-bold fs-5 fs-md-3">
+              VR AI Assistant
+            </h3>
+
+            <p className="text-dark fw-semibold fst-italic small mb-2">
+              Full Stack Developer • The MRC Studio
+            </p>
+
+            <div className="mb-2 d-flex flex-wrap gap-2">
+              <span className="badge bg-dark">Unity</span>
+              <span className="badge bg-dark">AI</span>
+              <span className="badge bg-dark">LLMs</span>
+              <span className="badge bg-dark">VR</span>
+            </div>
+
+            <ul className="ps-3 text-dark mb-0">
+              <li>Developed a Unity-based AI assistant with real-time interaction</li>
+              <li>Integrated large language models for conversational systems</li>
+              <li>Tested and deployed on Meta Quest 2 in a studio environment</li>
+            </ul>
+
+          </div>
+        </div>
+
+        {/* Urban Fracture */}
+        <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
+          <div className="card-body text-start">
+
+            <h3 className="text-dark fw-bold fs-5 fs-md-3">
+              Urban Fracture
+            </h3>
+
+            <p className="text-dark fw-semibold fst-italic small mb-2">
+              Full Stack Developer • Independent Project
+            </p>
+
+            <div className="mb-2 d-flex flex-wrap gap-2">
+              <span className="badge bg-dark">Unity</span>
+              <span className="badge bg-dark">C#</span>
+              <span className="badge bg-dark">Game Dev</span>
+              <span className="badge bg-dark">AI</span>
+            </div>
+
+            <ul className="ps-3 text-dark mb-0">
+              <li>Developed a 3D FPS inspired by early 2000s tactical shooters</li>
+              <li>Implemented physics, sound systems, and AI behavior</li>
+              <li>Built NPC systems using perception and pathfinding</li>
+            </ul>
+
+          </div>
+        </div>
+
+        {/* Student Advisor Ticketing System */}
+        <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
+          <div className="card-body text-start">
+
+            <h3 className="text-dark fw-bold fs-5 fs-md-3">
+              Student Advisor Ticketing System
+            </h3>
+
+            <p className="text-dark fw-semibold fst-italic small mb-2">
+              Full Stack Developer • Durham College
+            </p>
+
+            <div className="mb-2 d-flex flex-wrap gap-2">
+              <span className="badge bg-dark">React Native</span>
+              <span className="badge bg-dark">SQL</span>
+              <span className="badge bg-dark">SMTP</span>
+              <span className="badge bg-dark">Mobile</span>
+            </div>
+
+            <ul className="ps-3 text-dark mb-0">
+              <li>Led backend development of a student ticketing system</li>
+              <li>Replaced email workflows with structured request handling</li>
+              <li>Collaborated in sprint-based development with faculty</li>
+            </ul>
+<Link href="/projects" className="btn btn-outline-light w-md-auto">
+              View Projects
             </Link>
-      </div>
+          </div>
+        </div>
+        </div>
 
         <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
           <h2 className="fw-bold fs-2 fs-md-1">Experience</h2>
@@ -106,7 +186,7 @@ export default function Home() {
               </p>
 
               <p className="text-muted small mb-2">
-                April - May 2025 | Durham College
+                April - May 2025 | Durham College | in-person at The MRC Studio
               </p>
 
               <ul className="ps-3 text-dark mb-0">
