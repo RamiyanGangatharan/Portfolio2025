@@ -55,43 +55,20 @@ export default function Home() {
               <p className="card-text text-dark fw-bold fst-italic mb-2">
                 Real-time Multithreaded Chat Application
               </p>
+            
               <hr className="w-75 mx-auto opacity-25" />
+
+              <div className="mb-3">
+              <span className="badge bg-dark text-white me-2">Java</span>
+              <span className="badge bg-dark text-white me-2">Sockets</span>
+              <span className="badge bg-dark text-white me-2">Multithreading</span>
+              <span className="badge bg-dark text-white">MVC</span>
+            </div>
               <ul className="text-start ms-5 text-dark">
                 <li>Built a client-server chat system using Java sockets</li>
                 <li>Implemented multithreading for handling multiple users concurrently</li>
                 <li>Designed MVC architecture for clean separation of concerns</li>
                 <li>Added command handling system (e.g., /users, /quit)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
-            <div className="card-body">
-              <p className="card-title text-dark display-5">AI Assistant (VR/XR + Desktop)</p>
-              <p className="card-text text-dark fw-bold fst-italic mb-2">
-                Unity + Local LLM Integration
-              </p>
-              <hr className="w-75 mx-auto opacity-25" />
-              <ul className="text-start ms-5 text-dark">
-                <li>Developed an AI assistant using Unity and FastAPI</li>
-                <li>Integrated speech-to-text and text-to-speech pipelines</li>
-                <li>Enabled real-time conversational interaction with local LLMs</li>
-                <li>Designed for immersive VR/XR environments</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="card bg-light border-0 shadow-lg mb-4 mt-4">
-            <div className="card-body">
-              <p className="card-title text-dark display-5">FILMASH</p>
-              <p className="card-text text-dark fw-bold fst-italic mb-2">
-                Indie Movie Discovery App
-              </p>
-              <hr className="w-75 mx-auto opacity-25" />
-              <ul className="text-start ms-5 text-dark">
-                <li>Built a full-stack web app for discovering indie films</li>
-                <li>Implemented dynamic UI and responsive design</li>
-                <li>Focused on user experience and content accessibility</li>
               </ul>
             </div>
           </div>
