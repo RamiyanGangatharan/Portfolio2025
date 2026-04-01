@@ -53,7 +53,7 @@ export default function Home() {
 
         {/* PROJECTS SECTION */}
         <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
-        <h2 className="fw-bold fs-2 fs-md-1">Projects</h2>
+        <h2 className="fw-bold fs-2 fs-md-1">FeaturedProjects</h2>
         <hr className="w-50 mx-auto opacity-25" />
 
         <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
@@ -84,9 +84,9 @@ export default function Home() {
           </div>
         </div>
 
-        <button className="btn btn-outline-light w-md-auto mt-3">
-          View More Projects
-        </button>
+        <Link href="/projects" className="btn btn-outline-light w-md-auto">
+              View More Projects
+            </Link>
       </div>
 
         <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
