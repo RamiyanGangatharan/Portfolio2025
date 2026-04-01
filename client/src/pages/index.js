@@ -55,6 +55,39 @@ export default function Home() {
         <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
           <h2 className="fw-bold fs-2 fs-md-1">Featured Projects</h2>
           <hr className="w-50 mx-auto opacity-25" />
+
+        <div className="card bg-light border-0 shadow-lg mb-3 mt-3"> 
+        <div className="card-body text-start"> 
+
+          <h3 className="text-dark fw-bold fs-5 fs-md-3">
+            TabletopSync
+          </h3> 
+
+          <p className="text-dark fw-semibold fst-italic small mb-2">
+            Multiplayer Tabletop RPG System • Ontario Tech University
+          </p> 
+
+          <div className="mb-2 d-flex flex-wrap gap-2"> 
+            <span className="badge bg-dark">Java</span> 
+            <span className="badge bg-dark">Swing</span> 
+            <span className="badge bg-dark">Sockets</span> 
+            <span className="badge bg-dark">Multithreading</span> 
+            <span className="badge bg-dark">MVC</span> 
+            <span className="badge bg-dark">JSON/XML</span>
+          </div> 
+
+          <ul className="ps-3 text-dark mb-0"> 
+            <li>Developed a multiplayer 2D tabletop RPG system with real-time shared state</li> 
+            <li>Implemented multithreaded client-server architecture for concurrent player sessions</li> 
+            <li>Built interactive grid-based canvas for token placement, movement, and map updates</li> 
+            <li>Integrated real-time chat, collaborative notepad, and session tools</li> 
+            <li>Designed using MVC architecture for scalability and modular development</li> 
+            <li>Planned support for persistence (save/load), user permissions, and game utilities</li> 
+          </ul> 
+
+        </div> 
+      </div>
+
         <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
           <div className="card-body text-start">
 
