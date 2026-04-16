@@ -47,31 +47,116 @@ export default function Home() {
           </div>
           <p className="mt-4 text-white-50 lead">Open to Opportunities</p>
         </div>
-        <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
-          <h2 className="fw-bold fs-2 fs-md-1">Completed Education</h2>
+    
+    <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
+          <h2 className="fw-bold fs-2 fs-md-1">Experience</h2>
           <hr className="w-50 mx-auto opacity-25" />
-
-          <div className="card bg-light border-0 shadow-lg mb-4 mt-3">
-          <div className="card-body text-start">
-            <h3 className="text-dark fw-bold fs-5 fs-md-3">
-              Durham College
-            </h3>
-
-            <p className="text-dark fw-semibold fst-italic small mb-1">
-              Computer Programming and Analysis, Advanced Diploma
-            </p>
-
-            <p className="text-muted small mb-2">
-              September 2022 - April 2025 | Oshawa, ON
-            </p>
-
-            <ul className="ps-3 text-dark mb-0">
-              <li>Built full-stack applications using Java, C#, Python, SQL, and modern web technologies</li>
-              <li>Developed strong foundations in database design, RESTful systems, and software engineering principles</li>
-              <li>Applied object-oriented programming and design patterns in team-based projects</li>
-            </ul>
+          {/* MRCS */}
+          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
+            <div className="card-body text-start">
+              <h3 className="text-dark fw-bold fs-5 fs-md-3">
+                The Mixed Reality Capture Studio
+              </h3>
+              <p className="text-dark fw-semibold fst-italic small mb-1">
+                Research Assistant: Designer & Developer Intern
+              </p>
+              <p className="text-muted small mb-2">
+                April - May 2025 | Durham College | in-person at The MRC Studio
+              </p>
+              <ul className="ps-3 text-dark mb-0">
+                <li>
+                  Developed a Unity-based AI assistant using local LLMs
+                  <ul className="ps-3">
+                    <li>Integrated voice dictation and text-to-speech via FastAPI</li>
+                    <li>Built real-time speech-to-AI interaction pipeline</li>
+                    <li>Prototyped conversational systems for VR/XR</li>
+                  </ul>
+                </li>
+                <li className="mt-2">
+                  Built a Souls-like 3D game
+                  <ul className="ps-3">
+                    <li>Implemented movement, camera, and combat systems</li>
+                    <li>Focused on responsive gameplay and immersion</li>
+                    <li>Worked with animations, collisions, and abilities</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+          {/* Freelance */}
+          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
+            <div className="card-body text-start">
+              <h3 className="text-dark fw-bold fs-5 fs-md-3">
+                Freelance Software Consultant
+              </h3>
+              <p className="text-muted small mb-2">
+                January 2023 - Present | Hybrid
+              </p>
+              <ul className="ps-3 text-dark mb-2">
+                <li>Provided code reviews and software architecture guidance</li>
+                <li>Improved performance, structure, and maintainability</li>
+              </ul>
+              <p className="fw-semibold text-dark mb-1">Notable Projects</p>
+              <ul className="ps-3 text-dark mb-0">
+                <li>FILMASH – Indie movie discovery app</li>
+                <li>KIBATI Auto Shop – E-commerce storefront</li>
+              </ul>
+            </div>
+          </div>
+          {/* Tutor */}
+          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
+            <div className="card-body text-start">
+              <h3 className="text-dark fw-bold fs-5 fs-md-3">
+                Programming Tutor
+              </h3>
+              <p className="text-dark fw-semibold fst-italic small mb-1">
+                Private Tutor
+              </p>
+              <p className="text-muted small mb-2">
+                September 2023 - April 2025 | Hybrid
+              </p>
+              <ul className="ps-3 text-dark mb-0">
+                <li>Taught C#, Java, Python, SQL, and web development</li>
+                <li>Adapted lessons to individual learning styles</li>
+                <li>Strengthened students’ problem-solving skills</li>
+              </ul>
+            </div>
+          </div>
+          {/* Tim Hortons */}
+          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
+            <div className="card-body text-start">
+              <h3 className="text-dark fw-bold fs-5 fs-md-3">
+                Tim Hortons
+              </h3>
+              <p className="text-muted small mb-2">
+                November 2021 - Present | Various Locations
+              </p>
+              <ul className="ps-3 text-dark mb-0">
+                <li>
+                  <strong>Shift Supervisor</strong>
+                  <ul className="ps-3">
+                    <li>Led teams of 3–12 employees</li>
+                    <li>Managed operations and service quality</li>
+                    <li>Handled cash and inventory</li>
+                  </ul>
+                </li>
+                <li className="mt-2">
+                  <strong>Team Lead</strong>
+                  <ul className="ps-3">
+                    <li>Assisted in training and scheduling</li>
+                    <li>Supported daily operations</li>
+                  </ul>
+                </li>
+                <li className="mt-2">
+                  <strong>Team Member</strong>
+                  <ul className="ps-3">
+                    <li>Worked in high-volume environment</li>
+                    <li>Maintained quality and efficiency</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
 
@@ -192,115 +277,32 @@ export default function Home() {
               </Link>
 
         </div>
+      
         <div className="text-white bg-dark shadow-lg border-0 p-4 p-md-5 mb-4 mt-4 rounded w-100">
-          <h2 className="fw-bold fs-2 fs-md-1">Experience</h2>
+          <h2 className="fw-bold fs-2 fs-md-1">Completed Education</h2>
           <hr className="w-50 mx-auto opacity-25" />
-          {/* MRCS */}
-          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
-            <div className="card-body text-start">
-              <h3 className="text-dark fw-bold fs-5 fs-md-3">
-                The Mixed Reality Capture Studio
-              </h3>
-              <p className="text-dark fw-semibold fst-italic small mb-1">
-                Research Assistant: Designer & Developer Intern
-              </p>
-              <p className="text-muted small mb-2">
-                April - May 2025 | Durham College | in-person at The MRC Studio
-              </p>
-              <ul className="ps-3 text-dark mb-0">
-                <li>
-                  Developed a Unity-based AI assistant using local LLMs
-                  <ul className="ps-3">
-                    <li>Integrated voice dictation and text-to-speech via FastAPI</li>
-                    <li>Built real-time speech-to-AI interaction pipeline</li>
-                    <li>Prototyped conversational systems for VR/XR</li>
-                  </ul>
-                </li>
-                <li className="mt-2">
-                  Built a Souls-like 3D game
-                  <ul className="ps-3">
-                    <li>Implemented movement, camera, and combat systems</li>
-                    <li>Focused on responsive gameplay and immersion</li>
-                    <li>Worked with animations, collisions, and abilities</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+
+          <div className="card bg-light border-0 shadow-lg mb-4 mt-3">
+          <div className="card-body text-start">
+            <h3 className="text-dark fw-bold fs-5 fs-md-3">
+              Durham College
+            </h3>
+
+            <p className="text-dark fw-semibold fst-italic small mb-1">
+              Computer Programming and Analysis, Advanced Diploma
+            </p>
+
+            <p className="text-muted small mb-2">
+              September 2022 - April 2025 | Oshawa, ON
+            </p>
+
+            <ul className="ps-3 text-dark mb-0">
+              <li>Built full-stack applications using Java, C#, Python, SQL, and modern web technologies</li>
+              <li>Developed strong foundations in database design, RESTful systems, and software engineering principles</li>
+              <li>Applied object-oriented programming and design patterns in team-based projects</li>
+            </ul>
           </div>
-          {/* Freelance */}
-          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
-            <div className="card-body text-start">
-              <h3 className="text-dark fw-bold fs-5 fs-md-3">
-                Freelance Software Consultant
-              </h3>
-              <p className="text-muted small mb-2">
-                January 2023 - Present | Hybrid
-              </p>
-              <ul className="ps-3 text-dark mb-2">
-                <li>Provided code reviews and software architecture guidance</li>
-                <li>Improved performance, structure, and maintainability</li>
-              </ul>
-              <p className="fw-semibold text-dark mb-1">Notable Projects</p>
-              <ul className="ps-3 text-dark mb-0">
-                <li>FILMASH – Indie movie discovery app</li>
-                <li>KIBATI Auto Shop – E-commerce storefront</li>
-              </ul>
-            </div>
-          </div>
-          {/* Tutor */}
-          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
-            <div className="card-body text-start">
-              <h3 className="text-dark fw-bold fs-5 fs-md-3">
-                Programming Tutor
-              </h3>
-              <p className="text-dark fw-semibold fst-italic small mb-1">
-                Private Tutor
-              </p>
-              <p className="text-muted small mb-2">
-                September 2023 - April 2025 | Hybrid
-              </p>
-              <ul className="ps-3 text-dark mb-0">
-                <li>Taught C#, Java, Python, SQL, and web development</li>
-                <li>Adapted lessons to individual learning styles</li>
-                <li>Strengthened students’ problem-solving skills</li>
-              </ul>
-            </div>
-          </div>
-          {/* Tim Hortons */}
-          <div className="card bg-light border-0 shadow-lg mb-3 mt-3">
-            <div className="card-body text-start">
-              <h3 className="text-dark fw-bold fs-5 fs-md-3">
-                Tim Hortons
-              </h3>
-              <p className="text-muted small mb-2">
-                November 2021 - Present | Various Locations
-              </p>
-              <ul className="ps-3 text-dark mb-0">
-                <li>
-                  <strong>Shift Supervisor</strong>
-                  <ul className="ps-3">
-                    <li>Led teams of 3–12 employees</li>
-                    <li>Managed operations and service quality</li>
-                    <li>Handled cash and inventory</li>
-                  </ul>
-                </li>
-                <li className="mt-2">
-                  <strong>Team Lead</strong>
-                  <ul className="ps-3">
-                    <li>Assisted in training and scheduling</li>
-                    <li>Supported daily operations</li>
-                  </ul>
-                </li>
-                <li className="mt-2">
-                  <strong>Team Member</strong>
-                  <ul className="ps-3">
-                    <li>Worked in high-volume environment</li>
-                    <li>Maintained quality and efficiency</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+        </div>
         </div>
       </main>
       <Footer />
