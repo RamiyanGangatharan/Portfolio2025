@@ -1,5 +1,17 @@
 [
   {
+    "title": "Distributed Systems Lab",
+    "description": "An ongoing Java project exploring distributed systems from first principles. The project begins with network communication and concurrency, progressively building toward multi-node coordination, fault tolerance, replication, and consensus.",
+    "badges": [
+      "Java",
+      "Networking",
+      "Concurrency",
+      "Distributed Systems",
+      "2026"
+    ],
+    "link": "/content/distributedSystems"
+  },
+  {
     "title": "TableTopSync",
     "description": "A multiplayer 2D tabletop RPG application built in Java using a client-server architecture. Multiple clients can connect to a shared session and interact with a synchronized game board in real time, including moving sprites, managing maps, chatting, and working with persistent notes. The project uses Java networking, concurrent client handling, JSON-based data processing, and persistence to coordinate shared state between clients.",
     "badges": [
