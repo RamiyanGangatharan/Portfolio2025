@@ -1,5 +1,20 @@
 [
   {
+    "title": "TableTopSync",
+    "description": "A multiplayer 2D tabletop RPG application built in Java using a client-server architecture. Multiple clients can connect to a shared session and interact with a synchronized game board in real time, including moving sprites, managing maps, chatting, and working with persistent notes. The project uses Java networking, concurrent client handling, JSON-based data processing, and persistence to coordinate shared state between clients.",
+    "badges": [
+      "Java",
+      "Java Swing",
+      "TCP/IP",
+      "Client-Server",
+      "Multithreading",
+      "Networking",
+      "Jackson",
+      "2026"
+    ],
+    "link": "/content/tabletopsync"
+  },
+  {
     "title": "Portfolio Project",
     "description": "This is a full-stack MERN application (MongoDB, Express, Next.js, Node.js) built to showcase my development skills. It features a dynamic frontend using Next.js, a backend API with Express, and a MongoDB database. The project includes an admin panel for managing content and is continuously updated like a live service, reflecting my growth and new skillsets.",
     "badges": [
