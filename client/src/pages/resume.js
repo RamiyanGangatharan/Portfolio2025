@@ -27,7 +27,7 @@ export default function DevLog() {
                     <iframe
                         id="resume"
                         title="Ramiyan: Resume"
-                        src="/img/Resume-DEV.pdf"
+                        src="/img/RamiyanGangatharan.pdf"
                         style={{
                             width: "100%",
                             maxWidth: "900px",
